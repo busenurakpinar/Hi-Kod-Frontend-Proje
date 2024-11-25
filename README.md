@@ -38,7 +38,4 @@ Farkındayız projesi, dijital dünyada güvenlik, bilinç ve farkındalık olu�
 
 **Bootstrap:** Web sayfalarını hızlı ve kolay bir şekilde tasarlamak için kullanılan bir CSS çatısıdır.
 
-**Netlify:** Web sitelerini ve uygulamalarını barındırmak ve dağıtmak için kullanılan bir bulut platformudur.
-
-💻  **Proje tanıtım videosunu görmek için:** 
 
