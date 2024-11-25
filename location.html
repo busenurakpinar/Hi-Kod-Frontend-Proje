@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--=============== REMIXICONS ===============-->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css">
+
+
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="assets/css/styles.css">
+        <link rel="stylesheet" href="assets/css/slider-style.css">
+        <link rel="stylesheet" href="assets/css/contact-style.css">
+        <link rel="stylesheet" href="assets/css/footer-style.css">
+
+        <title>Konumumuz | FARKINDAYIZ</title>
+
+        <style>
+            .map-container {
+  display: flex;
+  justify-content: center; /* Ortalamak için */
+  
+  
+}
+
+.responsive-iframe {
+  width: 100%;
+  max-height: 480px;
+   /* İsteğe bağlı olarak maksimum genişlik ayarlayın */
+  height: auto; /* Yüksekliği otomatik olarak ayarlar */
+  aspect-ratio: 4 / 3; /* İframe'in en boy oranını korur */
+  border: 0;
+}
+
+.card {
+      transition: transform 0.3s ease; /* Geçiş süresi */
+    }
+    
+    .card:hover {
+      transform: scale(1.05); /* Hover'da kartı %5 büyüt */
+    }
+    @media (min-width: 768px) {
+      .card {
+        max-width: 350px; /* Kartların genişliğini sınırlıyoruz */
+      }
+    }
+
+    .support_text{
+  column-gap: 0.25rem;
+  color: #4b4497b2;
+  
+  transition: color 0.3s;
+  text-align: center;
+  
+}
+
+.support_text:hover {
+  color: #4b4497;
+}
+
+        </style>
+
+        
+    </head>
+    <body style="overflow-x: hidden;" >
+        <!--=============== HEADER ===============-->
+        <header class="header">
+            <nav class="nav container">
+                <div class="nav__data">
+                    <a href="index.html" class="nav__logo fs-5">
+                        <i class="bi bi-circle-fill"></i> FARKINDAYIZ
+                        
+                    </a>
+    
+                    <div class="nav__toggle" id="nav-toggle">
+                        <i class="ri-menu-line nav__toggle-menu"></i>
+                        <i class="ri-close-line nav__toggle-close"></i>
+                    </div>
+                </div>
+
+                <!--=============== NAV MENU ===============-->
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li>
+                            <a href="index.html" class="nav__link">Anasayfa</a>
+                        </li>
+
+                        <!--=============== DROPDOWN 1 ===============-->
+                        <li class="dropdown__item">                      
+                            <div class="nav__link dropdown__button">
+                                Keşfet <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                            </div>
+
+                            <div class="dropdown__container">
+                                <div class="dropdown__content">
+                                    <div class="dropdown__group">
+                                        <div class="dropdown__icon">
+                                            <i class="ri-flashlight-line"></i>
+                                        </div>
+    
+                                        <span class="dropdown__title">Dijital Şiddet</span>
+    
+                                        <ul class="dropdown__list">
+                                            <li>
+                                                <a href="siber-zorbalik.html" class="dropdown__link">Siber Zorbalık</a>
+                                            </li>
+                                            <li>
+                                                <a href="siber-taciz.html" class="dropdown__link">Siber Taciz</a>
+                                            </li>
+                                            <li>
+                                                <a href="siber-takip.html" class="dropdown__link">Siber Takip (Cyberstalking)</a>
+                                            </li>
+                                            <li>
+                                                <a href="kimlik-hirsizligi.html" class="dropdown__link">Kimlik Hırsızlığı ve Dolandırıcılık</a>
+                                            </li>
+                                            <li>
+                                                <a href="dijital-mahremiyet.html" class="dropdown__link">Dijital Mahremiyet İhlalleri</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+    
+                                    <div class="dropdown__group">
+                                        <div class="dropdown__icon">
+                                            <i class="ri-heart-3-line"></i>
+                                        </div>
+    
+                                        <span class="dropdown__title">Dijital Güvenlik</span>
+    
+                                        <ul class="dropdown__list">
+                                            <li>
+                                                <a href="phishing-dolandiricilik.html" class="dropdown__link">Phishing ve Dolandırıcılık</a>
+                                            </li>
+                                            <li>
+                                                <a href="dijital-manipulasyon.html" class="dropdown__link">Dijital Manipülasyon</a>
+                                            </li>
+                                            
+                                        </ul>
+                                    </div>
+    
+                                    <div class="dropdown__group">
+                                        <div class="dropdown__icon">
+                                            <i class="ri-book-mark-line"></i>
+                                        </div>
+    
+                                        <span class="dropdown__title">Çevrimiçi Davranış Kuralları</span>
+    
+                                        <ul class="dropdown__list">
+                                            <li>
+                                                <a href="dijital-ayak-izi.html" class="dropdown__link">Dijital Ayak İzi</a>
+                                            </li>
+                                            <li>
+                                                <a href="cocuklar-icin.html" class="dropdown__link">Çocuklar için Dijital Davranış</a>
+                                            </li>
+                                            
+                                            <li>
+                                                <a href="siber-sorumluluk.html" class="dropdown__link">Siber Sorumluluk</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+    
+                                    <div class="dropdown__group">
+                                        <div class="dropdown__icon">
+                                            <i class="ri-file-paper-2-line"></i>
+                                        </div>
+    
+                                        <span class="dropdown__title">Dijital Şiddetle Mücadele</span>
+    
+                                        <ul class="dropdown__list">
+                                            <li>
+                                                <a href="hukuk.html" class="dropdown__link">Yasal Destek</a>
+                                            </li>
+                                            <li>
+                                                <a href="hukuk.html" class="dropdown__link">Hukuki Haklar</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <!--=============== DROPDOWN 2 ===============-->
+                        <!-- <li class="dropdown__item">
+                            <div class="nav__link dropdown__button">
+                                Resources <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                            </div>
+
+                            <div class="dropdown__container">
+                                <div class="dropdown__content">
+                                    <div class="dropdown__group">
+                                        <div class="dropdown__icon">
+                                            <i class="ri-code-line"></i>
+                                        </div>
+    
+                                        <span class="dropdown__title">Web templates</span>
+    
+                                        <ul class="dropdown__list">
+                                            <li>
+                                                <a href="#" class="dropdown__link">Free templates</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="dropdown__link">Premium templates</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+    
+                                    <div class="dropdown__group">
+                                        <div class="dropdown__icon">
+                                            <i class="ri-pen-nib-line"></i>
+                                        </div>
+    
+                                        <span class="dropdown__title">Designs</span>
+    
+                                        <ul class="dropdown__list">
+                                            <li>
+                                                <a href="#" class="dropdown__link">Web designs</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="dropdown__link">App designs</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="dropdown__link">Component design</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+    
+                                    <div class="dropdown__group">
+                                        <div class="dropdown__icon">
+                                            <i class="ri-apps-2-line"></i>
+                                        </div>
+    
+                                        <span class="dropdown__title">Others</span>
+    
+                                        <ul class="dropdown__list">
+                                            <li>
+                                                <a href="#" class="dropdown__link">Recent blogs</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="dropdown__link">Tutorial videos</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="dropdown__link">Webinar</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li> -->
+
+                        
+
+                        <!--=============== DROPDOWN 3 ===============-->
+                        <li class="dropdown__item">                        
+                            <div class="nav__link dropdown__button">
+                                Topluluk <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                            </div>
+
+                            <div class="dropdown__container">
+                                <div class="dropdown__content">
+                                    <div class="dropdown__group">
+                                        <div class="dropdown__icon">
+                                            <i class="ri-community-line"></i>
+                                        </div>
+    
+                                        <span class="dropdown__title">Hakkımızda</span>
+    
+                                        <ul class="dropdown__list">
+                                            <li>
+                                                <a href="about-us.html" class="dropdown__link">Hakkımızda</a>
+                                            </li>
+                                            <li>
+                                                <a href="support.html" class="dropdown__link">Destek</a>
+                                            </li>
+                                            <li>
+                                                <a href="contact.html" class="dropdown__link">İletişim</a>
+                                            </li>
+                                            <li>
+                                                <a href="join-us.html" class="dropdown__link">Bize Katıl</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+    
+                                    <div class="dropdown__group">
+                                        <div class="dropdown__icon">
+                                            <i class="ri-map-pin-2-line"></i>
+                                        </div>
+    
+                                        <span class="dropdown__title">Konumumuz</span>
+    
+                                        <ul class="dropdown__list">
+                                            <li>
+                                                <a href="location.html" class="dropdown__link">Haritalardaki Konum</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="dropdown__link">İletişim</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <a href="price.html" class="nav__link">Bağış</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <br><br><br><br><br><br>
+        
+        
+        <!--=============== FORM ===============-->
+        <div class="container">
+            <iframe class="responsive-iframe " src="https://www.google.com/maps/d/embed?mid=1jAXCJW-pBpe4spYDKNs_2WUm6YeN99U&hl=tr&ehbc=2E312F" width="100%" height="480"></iframe>
+        </div>
+
+
+
+        <div class="container my-5 pb-3 pt-3 shadow">
+            <h1 class="support_text text-center mb-4">Farkındayız Temsilcilikler</h1>
+            <div class="row g-4 justify-content-center">
+              <div class="col-md-3 col-sm-6 d-flex justify-content-center">
+                <div class="card">
+                  <!-- <img src="assets/images/create-an-image-for-the-contact-page-of-my-website.png" class="card-img-top" alt="Kart Görseli"> -->
+                  <div class="card-body">
+                    <h5 class="bi bi-geo-alt-fill support_text card-title">ANKARA</h5><br>
+                    <p class="card-text">
+                        <p style="display: inline-block;" class="support_text">Temsilci:</p> Sena Durmuş<br>
+
+                        <p style="display: inline-block;" class="support_text">Adres:</p> Lorem ipsum dolor./ Ankara<br>
+                        
+
+                        <p style="display: inline-block;" class="support_text">Tel:</p> 0555 555 55 55<br>
+
+                        <p style="display: inline-block;" class="support_text">Şube:</p> +90 (555) 555 55 55<br>
+                        
+                        <p style="display: inline-block;" class="support_text">E-Posta:</p> <a href="mailto:#">ankara@farkindayiz.com</a><br>
+                        
+                          
+                    
+                  </div>
+                </div>
+              </div>
+        
+              <div class="col-md-3 col-sm-6 d-flex justify-content-center">
+                <div class="card">
+                  <!-- <img src="assets/images/join-team.png" class="card-img-top" alt="Kart Görseli"> -->
+                  <div class="card-body">
+                    <h5 class="bi bi-geo-alt-fill support_text card-title">ÇORUM</h5><br>
+                    <p class="card-text">
+                        <p style="display: inline-block;" class="support_text">Temsilci:</p> Pelin Dinç<br>
+
+                        <p style="display: inline-block;" class="support_text">Adres:</p> Lorem ipsum dolor./ Çorum<br>
+                        
+
+                        <p style="display: inline-block;" class="support_text">Tel:</p> 0555 555 55 55<br>
+
+                        <p style="display: inline-block;" class="support_text">Şube:</p> +90 (555) 555 55 55<br>
+                        
+                        <p style="display: inline-block;" class="support_text">E-Posta:</p> <a href="mailto:#">corum@farkindayiz.com</a><br>
+                  </div>
+                </div>
+              </div>
+        
+              <div class="col-md-3 col-sm-6 d-flex justify-content-center">
+                <div class="card">
+                  <!-- <img src="assets/images/create-an-image-for-the-contact-page-of-my-website.png" class="card-img-top" alt="Kart Görseli"> -->
+                  <div class="card-body">
+                    <h5 class="bi bi-geo-alt-fill support_text card-title">DENİZLİ</h5><br>
+                    <p class="card-text">
+                        <p style="display: inline-block;" class="support_text">Temsilci:</p> Müslüm Gürses<br>
+
+                        <p style="display: inline-block;" class="support_text">Adres:</p> Lorem ipsum dolor./ Denizli<br>
+                        
+
+                        <p style="display: inline-block;" class="support_text">Tel:</p> 0555 555 55 55<br>
+
+                        <p style="display: inline-block;" class="support_text">Şube:</p> +90 (555) 555 55 55<br>
+                        
+                        <p style="display: inline-block;" class="support_text">E-Posta:</p> <a href="mailto:#">denizli@farkindayiz.com</a><br>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-3 col-sm-6 d-flex justify-content-center">
+                <div class="card">
+                  <!-- <img src="assets/images/create-an-image-for-the-contact-page-of-my-website.png" class="card-img-top" alt="Kart Görseli"> -->
+                  <div class="card-body">
+                    <h5 class="bi bi-geo-alt-fill support_text card-title">ERZURUM</h5><br>
+                    <p class="card-text">
+                        <p style="display: inline-block;" class="support_text">Temsilci:</p> Tuğkan Gönültaş<br>
+
+                        <p style="display: inline-block;" class="support_text">Adres:</p> Lorem ipsum dolor./ Erzurum<br>
+                        
+
+                        <p style="display: inline-block;" class="support_text">Tel:</p> 0555 555 55 55<br>
+
+                        <p style="display: inline-block;" class="support_text">Şube:</p> +90 (555) 555 55 55<br>
+                        
+                        <p style="display: inline-block;" class="support_text">E-Posta:</p> <a href="mailto:#">erzurum@farkindayiz.com</a><br>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-6 d-flex justify-content-center">
+                <div class="card">
+                  <!-- <img src="assets/images/create-an-image-for-the-contact-page-of-my-website.png" class="card-img-top" alt="Kart Görseli"> -->
+                  <div class="card-body">
+                    <h5 class="bi bi-geo-alt-fill support_text card-title">İSTANBUL</h5><br>
+                    <p class="card-text">
+                        <p style="display: inline-block;" class="support_text">Temsilci:</p> Buse Nur Akpınar<br>
+
+                        <p style="display: inline-block;" class="support_text">Adres:</p> Lorem ipsum dolor./ İstanbul<br>
+                        
+
+                        <p style="display: inline-block;" class="support_text">Tel:</p> 0555 555 55 55<br>
+
+                        <p style="display: inline-block;" class="support_text">Şube:</p> +90 (555) 555 55 55<br>
+                        
+                        <p style="display: inline-block;" class="support_text">E-Posta:</p> <a href="mailto:#">istanbul@farkindayiz.com</a><br>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-6 d-flex justify-content-center">
+                <div class="card">
+                  <!-- <img src="assets/images/create-an-image-for-the-contact-page-of-my-website.png" class="card-img-top" alt="Kart Görseli"> -->
+                  <div class="card-body">
+                    <h5 class="bi bi-geo-alt-fill support_text card-title">KAYSERİ</h5><br>
+                    <p class="card-text">
+                        <p style="display: inline-block;" class="support_text">Temsilci:</p> Ahmet Sonuç<br>
+
+                        <p style="display: inline-block;" class="support_text">Adres:</p> Lorem ipsum dolor./ Kayseri<br>
+                        
+
+                        <p style="display: inline-block;" class="support_text">Tel:</p> 0555 555 55 55<br>
+
+                        <p style="display: inline-block;" class="support_text">Şube:</p> +90 (555) 555 55 55<br>
+                        
+                        <p style="display: inline-block;" class="support_text">E-Posta:</p> <a href="mailto:#">kayseri@farkindayiz.com</a><br>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-6 d-flex justify-content-center">
+                <div class="card">
+                  <!-- <img src="assets/images/create-an-image-for-the-contact-page-of-my-website.png" class="card-img-top" alt="Kart Görseli"> -->
+                  <div class="card-body">
+                    <h5 class="bi bi-geo-alt-fill support_text card-title">MALATYA</h5><br>
+                    <p class="card-text">
+                        <p style="display: inline-block;" class="support_text">Temsilci:</p> Caner Karul<br>
+
+                        <p style="display: inline-block;" class="support_text">Adres:</p> Lorem ipsum dolor./ Malatya<br>
+                        
+
+                        <p style="display: inline-block;" class="support_text">Tel:</p> 0555 555 55 55<br>
+
+                        <p style="display: inline-block;" class="support_text">Şube:</p> +90 (555) 555 55 55<br>
+                        
+                        <p style="display: inline-block;" class="support_text">E-Posta:</p> <a href="mailto:#">malatya@farkindayiz.com</a><br>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-6 d-flex justify-content-center">
+                <div class="card">
+                  <!-- <img src="assets/images/create-an-image-for-the-contact-page-of-my-website.png" class="card-img-top" alt="Kart Görseli"> -->
+                  <div class="card-body">
+                    <h5 class="bi bi-geo-alt-fill support_text card-title">TRABZON</h5><br>
+                    <p class="card-text">
+                        <p style="display: inline-block;" class="support_text">Temsilci:</p> Serdar Ortaç<br>
+
+                        <p style="display: inline-block;" class="support_text">Adres:</p> Lorem ipsum dolor./ Trabzon<br>
+                        
+
+                        <p style="display: inline-block;" class="support_text">Tel:</p> 0555 555 55 55<br>
+
+                        <p style="display: inline-block;" class="support_text">Şube:</p> +90 (555) 555 55 55<br>
+                        
+                        <p style="display: inline-block;" class="support_text">E-Posta:</p> <a href="mailto:#">trabzon@farkindayiz.com</a><br>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-6 d-flex justify-content-center">
+                <div class="card">
+                  <!-- <img src="assets/images/create-an-image-for-the-contact-page-of-my-website.png" class="card-img-top" alt="Kart Görseli"> -->
+                  <div class="card-body">
+                    <h5 class="bi bi-geo-alt-fill support_text card-title">VAN</h5><br>
+                    <p class="card-text">
+                        <p style="display: inline-block;" class="support_text">Temsilci:</p> Yağmur Güler<br>
+
+                        <p style="display: inline-block;" class="support_text">Adres:</p> Lorem ipsum dolor./ Van<br>
+                        
+
+                        <p style="display: inline-block;" class="support_text">Tel:</p> 0555 555 55 55<br>
+
+                        <p style="display: inline-block;" class="support_text">Şube:</p> +90 (555) 555 55 55<br>
+                        
+                        <p style="display: inline-block;" class="support_text">E-Posta:</p> <a href="mailto:#">van@farkindayiz.com</a><br>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            
+        </div>
+        
+        
+
+        
+          <section class="container text-dark mt-5 shadow" style="padding: 2rem 0;">  
+            <div class="row w-100">  
+                <div class="col-lg-4 col-md-6 col-12 mb-4 mb-lg-0 d-flex flex-column align-items-center text-center">  
+                    <h6 class="text-success">İletişim Numaralarımız</h6>  
+                    <p>+90 555 555 55 55</p>  
+                    <p>+90 555 555 55 56</p>  
+                    <p>+90 216 123 45 67</p>  
+                </div>  
+        
+                <div class="col-lg-4 col-md-6 col-12 mb-4 mb-lg-0 d-flex flex-column align-items-center text-center">  
+                    <h6 class="text-success">Mail Adreslerimiz</h6>  
+                    <p><a href="mailto:info@farkindayiz.com">info@farkindayiz.com</a></p>  
+                    <p><a href="mailto:info@yourdomain.com">info@yourdomain.com</a></p>  
+                </div>  
+        
+                <div class="col-lg-4 col-md-12 col-12 d-flex flex-column align-items-center text-center">  
+                    <h6 class="text-success">Adresimiz</h6>  
+                    <p><b>İstanbul Merkez Ofisi</b></p>  
+                    <p>İstiklal Caddesi No: 123, Beyoğlu, <br> 34430 İstanbul, Türkiye</p>  
+                </div>  
+            </div>  
+        </section>
+        
+        
+
+        
+            
+
+<br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br>
+
+        <!--=============== FOOTER ===============-->
+
+        <footer>
+            <div class="waves">
+                <div class="wave" id="wave1"></div>
+                <div class="wave" id="wave2"></div>
+                <div class="wave" id="wave3"></div>
+                <div class="wave" id="wave4"></div>
+            </div> 
+            <ul class="social_icon">
+                <li ><a class="bi bi-facebook" href="#"></a></li>
+                <li ><a class="bi bi-twitter" href="#"></a></li>
+                <li ><a class="bi bi-linkedin" href="#"></a></li>
+                <li ><a class="bi bi-instagram" href="#"></a></li>
+            </ul>
+            <ul class="menu">
+                <li><a href="index.html">Anasayfa</a></li>
+                <li><a href="about-us.html">Hakkında</a></li>
+                <li><a href="support.html">Destek</a></li>
+                <li><a href="#">Ekibimiz</a></li>
+                <li><a href="contact.html">İletişim</a></li>
+            </ul>
+            <p>&copy;2024 FARKINDAYIZ | Tüm Hakları Saklıdır</p>
+        </footer>
+        
+
+
+        
+        <!--=============== MAIN JS ===============-->
+        <script src="assets/js/main.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    </body>
+</html>

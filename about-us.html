@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--=============== REMIXICONS ===============-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css">
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/slider-style.css">
+    <link rel="stylesheet" href="assets/css/footer-style.css">
+
+    <title>Hakkımızda</title>
+    <style>
+        h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 1.8rem;
+}
+
+
+.about__logo{
+    display: inline-block;
+  
+  column-gap: 0.25rem;
+  color: #4b4497b2;
+  
+  transition: color 0.3s;
+  
+}
+
+.about__logo:hover {
+  color: #4b4497;
+}
+
+p {
+    line-height: 1.9;
+    font-size: 1.2rem;
+}
+
+.text-align{
+    text-align: justify;
+}
+
+
+
+
+        
+    </style>
+</head>
+<body style="overflow-x: hidden;">
+    <!--=============== HEADER ===============-->
+    <header class="header">
+        <nav class="nav container">
+            <div class="nav__data">
+                <a href="index.html" class="nav__logo fs-5">
+                    <i class="bi bi-circle-fill"></i> FARKINDAYIZ
+                    
+                </a>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="ri-menu-line nav__toggle-menu"></i>
+                    <i class="ri-close-line nav__toggle-close"></i>
+                </div>
+            </div>
+
+            <!--=============== NAV MENU ===============-->
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li>
+                        <a href="index.html" class="nav__link">Anasayfa</a>
+                    </li>
+
+                    <!--=============== DROPDOWN 1 ===============-->
+                    <li class="dropdown__item">                      
+                        <div class="nav__link dropdown__button">
+                            Keşfet <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                        </div>
+
+                        <div class="dropdown__container">
+                            <div class="dropdown__content">
+                                <div class="dropdown__group">
+                                    <div class="dropdown__icon">
+                                        <i class="ri-flashlight-line"></i>
+                                    </div>
+
+                                    <span class="dropdown__title">Dijital Şiddet</span>
+
+                                    <ul class="dropdown__list">
+                                        <li>
+                                            <a href="siber-zorbalik.html" class="dropdown__link">Siber Zorbalık</a>
+                                        </li>
+                                        <li>
+                                            <a href="siber-taciz.html" class="dropdown__link">Siber Taciz</a>
+                                        </li>
+                                        <li>
+                                            <a href="siber-takip.html" class="dropdown__link">Siber Takip (Cyberstalking)</a>
+                                        </li>
+                                        <li>
+                                            <a href="kimlik-hirsizligi.html" class="dropdown__link">Kimlik Hırsızlığı ve Dolandırıcılık</a>
+                                        </li>
+                                        <li>
+                                            <a href="dijital-mahremiyet.html" class="dropdown__link">Dijital Mahremiyet İhlalleri</a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="dropdown__group">
+                                    <div class="dropdown__icon">
+                                        <i class="ri-heart-3-line"></i>
+                                    </div>
+
+                                    <span class="dropdown__title">Dijital Güvenlik</span>
+
+                                    <ul class="dropdown__list">
+                                        <li>
+                                            <a href="phishing-dolandiricilik.html" class="dropdown__link">Phishing ve Dolandırıcılık</a>
+                                        </li>
+                                        <li>
+                                            <a href="dijital-manipulasyon.html" class="dropdown__link">Dijital Manipülasyon</a>
+                                        </li>
+                                        
+                                    </ul>
+                                </div>
+
+                                <div class="dropdown__group">
+                                    <div class="dropdown__icon">
+                                        <i class="ri-book-mark-line"></i>
+                                    </div>
+
+                                    <span class="dropdown__title">Çevrimiçi Davranış Kuralları</span>
+
+                                    <ul class="dropdown__list">
+                                        <li>
+                                            <a href="dijital-ayak-izi.html" class="dropdown__link">Dijital Ayak İzi</a>
+                                        </li>
+                                        <li>
+                                            <a href="cocuklar-icin.html" class="dropdown__link">Çocuklar için Dijital Davranış</a>
+                                        </li>
+                                        
+                                        <li>
+                                            <a href="siber-sorumluluk.html" class="dropdown__link">Siber Sorumluluk</a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="dropdown__group">
+                                    <div class="dropdown__icon">
+                                        <i class="ri-file-paper-2-line"></i>
+                                    </div>
+
+                                    <span class="dropdown__title">Dijital Şiddetle Mücadele</span>
+
+                                    <ul class="dropdown__list">
+                                        <li>
+                                            <a href="hukuk.html" class="dropdown__link">Yasal Destek</a>
+                                        </li>
+                                        <li>
+                                            <a href="hukuk.html" class="dropdown__link">Hukuki Haklar</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <!--=============== DROPDOWN 2 ===============-->
+                    <!-- <li class="dropdown__item">
+                        <div class="nav__link dropdown__button">
+                            Resources <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                        </div>
+
+                        <div class="dropdown__container">
+                            <div class="dropdown__content">
+                                <div class="dropdown__group">
+                                    <div class="dropdown__icon">
+                                        <i class="ri-code-line"></i>
+                                    </div>
+
+                                    <span class="dropdown__title">Web templates</span>
+
+                                    <ul class="dropdown__list">
+                                        <li>
+                                            <a href="#" class="dropdown__link">Free templates</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="dropdown__link">Premium templates</a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="dropdown__group">
+                                    <div class="dropdown__icon">
+                                        <i class="ri-pen-nib-line"></i>
+                                    </div>
+
+                                    <span class="dropdown__title">Designs</span>
+
+                                    <ul class="dropdown__list">
+                                        <li>
+                                            <a href="#" class="dropdown__link">Web designs</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="dropdown__link">App designs</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="dropdown__link">Component design</a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="dropdown__group">
+                                    <div class="dropdown__icon">
+                                        <i class="ri-apps-2-line"></i>
+                                    </div>
+
+                                    <span class="dropdown__title">Others</span>
+
+                                    <ul class="dropdown__list">
+                                        <li>
+                                            <a href="#" class="dropdown__link">Recent blogs</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="dropdown__link">Tutorial videos</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="dropdown__link">Webinar</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li> -->
+
+                    
+
+                    <!--=============== DROPDOWN 3 ===============-->
+                    <li class="dropdown__item">                        
+                        <div class="nav__link dropdown__button">
+                            Topluluk <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                        </div>
+
+                        <div class="dropdown__container">
+                            <div class="dropdown__content">
+                                <div class="dropdown__group">
+                                    <div class="dropdown__icon">
+                                        <i class="ri-community-line"></i>
+                                    </div>
+
+                                    <span class="dropdown__title">Hakkımızda</span>
+
+                                    <ul class="dropdown__list">
+                                        <li>
+                                            <a href="about-us.html" class="dropdown__link">Hakkımızda</a>
+                                        </li>
+                                        <li>
+                                            <a href="support.html" class="dropdown__link">Destek</a>
+                                        </li>
+                                        <li>
+                                            <a href="contact.html" class="dropdown__link">İletişim</a>
+                                        </li>
+                                        <li>
+                                            <a href="join-us.html" class="dropdown__link">Bize Katıl</a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="dropdown__group">
+                                    <div class="dropdown__icon">
+                                        <i class="ri-map-pin-2-line"></i>
+                                    </div>
+
+                                    <span class="dropdown__title">Konumumuz</span>
+
+                                    <ul class="dropdown__list">
+                                        <li>
+                                            <a href="location.html" class="dropdown__link">Haritalardaki Konum</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="dropdown__link">İletişim</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <a href="price.html" class="nav__link">Bağış</a>
+                    </li>
+
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <br><br><br>
+    
+
+    <!--=============== HERO ===============-->
+    
+    <div class="container my-5 text-dark shadow">
+        <div class="row">
+            <div class="col-lg-6 col-md-12 order-lg-1 order-2 mb-4 mt-4 d-flex flex-column justify-content-center">
+                <h2 class="mb-4 about__logo ps-3">Hakkımızda</h2>
+                <p class="text-align ps-3">
+                    Topluluğumuz, toplumu bilinçlendirmek, desteklemek ve yardıma ihtiyaç duyan insanlara ulaşmak amacıyla kuruldu. Yıllardır süregelen çalışmalarımız ile kadın, çocuk ve erkeklerin maruz kaldığı zor durumlarla ilgili bilinç yaratmak için çalışıyoruz. 
+                    Amacımız, herkesin eşit ve güvenli bir yaşam sürdüğü bir toplum yaratmaktır.
+                </p>
+                <p class="text-align ps-3">
+                    Misyonumuz, farkındalık yaratmak, toplumu bilgilendirmek ve zor zamanlar geçiren bireylere destek sağlamaktır. Çalışmalarımızı bu vizyon doğrultusunda devam ettiriyoruz.
+                </p>
+            </div>
+            <div class="col-lg-6 col-md-12 order-lg-2 order-1 mb-4 mt-4 p-5">
+                <img style="border-radius: 50px;" src="assets/images/create-an-image-for-the-contact-page-of-my-website.png" class="img-fluid" alt="Hakkımızda Resmi">
+            </div>
+        </div>
+    
+        <div class="row mt-5 border-top ">
+            <div class="col-lg-4 col-md-6 mb-4 mt-4 p-5">
+                <h3 class="about__logo">Vizyonumuz</h3>
+                <p class="text-align">Her bireyin hak ettiği güven ve eşitliği sağlamaya yönelik çalışmalar yürütmek.</p>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4 mt-4 p-5">
+                <h3 class="about__logo">Misyonumuz</h3>
+                <p class="text-align">Toplumda farkındalığı artırmak, yardıma ihtiyaç duyanlara destek olmak.</p>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4 mt-4 p-5">
+                <h3 class="about__logo">Değerlerimiz</h3>
+                <p class="text-align">İnsan haklarına saygı, eşitlik, dayanışma ve toplumsal duyarlılık.</p>
+            </div>
+        </div>
+    </div>
+    
+    
+
+    <br><br><br><br><br><br><br><br><br><br>
+
+    <!--=============== FOOTER ===============-->
+
+    <footer>
+        <div class="waves">
+            <div class="wave" id="wave1"></div>
+            <div class="wave" id="wave2"></div>
+            <div class="wave" id="wave3"></div>
+            <div class="wave" id="wave4"></div>
+        </div> 
+        <ul class="social_icon">
+            <li ><a class="bi bi-facebook" href="#"></a></li>
+            <li ><a class="bi bi-twitter" href="#"></a></li>
+            <li ><a class="bi bi-linkedin" href="#"></a></li>
+            <li ><a class="bi bi-instagram" href="#"></a></li>
+        </ul>
+        <ul class="menu">
+            <li><a href="index.html">Anasayfa</a></li>
+            <li><a href="about-us.html">Hakkında</a></li>
+            <li><a href="support.html">Destek</a></li>
+            <li><a href="#">Ekibimiz</a></li>
+            <li><a href="contact.html">İletişim</a></li>
+        </ul>
+        <p>&copy;2024 FARKINDAYIZ | Tüm Hakları Saklıdır</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-8dSt2/9MEq1vBPlXxREUnZ4iWsbRQLPGe0xW8NHFGG4P/4PG7h6IlTBgaNco5DdD" crossorigin="anonymous"></script>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

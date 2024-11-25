@@ -1,0 +1,1286 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--=============== REMIXICONS ===============-->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css">
+
+
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="assets/css/styles.css">
+        <link rel="stylesheet" href="assets/css/slider-style.css">
+        <link rel="stylesheet" href="assets/css/contact-style.css">
+        <link rel="stylesheet" href="assets/css/footer-style.css">
+        <link rel="stylesheet" href="assets/css/hero-style.css">
+
+        <title>Hukuk ve Yasal Düzenlemeler</title>
+
+        <style>
+            .card {
+      transition: transform 0.3s ease; /* Geçiş süresi */
+    }
+    
+    .card:hover {
+      transform: scale(1.05); /* Hover'da kartı %5 büyüt */
+    }
+    @media (min-width: 768px) {
+      .card {
+        max-width: 350px; /* Kartların genişliğini sınırlıyoruz */
+      }
+    }
+
+    .support_text{
+  column-gap: 0.25rem;
+  color: #974444;
+  
+  transition: color 0.3s;
+  text-align: center;
+  
+}
+
+.support_text:hover {
+  color: #4b4497;
+}
+
+/* Menu Container */  
+.menu-container {  
+    padding: 15px;  
+    background-color: #fff;  
+    border-radius: 10px;  
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);  
+    width: 200px;  
+}  
+
+/* Social Links */  
+.menu-container a {  
+    display: flex;  
+    align-items: center;  
+    color: #333;  
+    text-decoration: none;  
+    margin-bottom: 10px;  
+    font-size: 16px;  
+    transition: all 0.3s ease;  
+}  
+
+/* Social Icons */  
+.menu-container a i {  
+    margin-right: 8px;  
+    font-size: 20px;  
+    color: #333;  
+    transition: color 0.3s ease;  
+}  
+
+/* Hover Effect */  
+.menu-container a:hover i {  
+    color: #1da1f2;   
+}  
+
+/* Copy Link */  
+.copy-link {  
+    display: block;  
+    align-items: center;  
+    background-color: #f5f5f5;  
+    padding: 8px;  
+    border-radius: 5px;  
+    color: #333;  
+    font-size: 12px;  
+    cursor: pointer;  
+    margin-top: 20px;   
+}  
+
+.copy-link:hover {  
+    background-color: #e0e0e0;  
+}
+
+.text-align{
+    text-align: justify;
+}
+
+.text-margin{
+    margin-top: 30px;
+}
+
+mark {
+    background-color: #ff00003a; 
+    color: #000;
+    padding: 0.2em;
+    border-radius: 13px;
+}
+
+
+
+    .toc {
+    position: fixed; /* Keep it fixed on the right */
+    top: 100px; /* Space from the top */
+    right: 20px; /* Space from the right */
+    width: 150px; /* Fixed width for TOC */
+    background-color: rgba(255, 255, 255, 0.87); /* Semi-transparent background */
+    border-radius: 8px; /* Rounded corners */
+    padding: 15px; /* Padding inside the TOC */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+    z-index: 1; /* Ensure it's above other elements */
+    display: flex; /* Flexbox ile hizalama yap */  
+    flex-direction: column; /* Dikey hizalama (default olarak) */  
+    align-items: flex-end;
+}
+
+.toc-toggle {
+    background-color: #4b4497; /* Button background color */
+    color: white; /* Button text color */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners for the button */
+    padding: 8px; /* Padding for the button */
+    cursor: pointer; /* Pointer cursor on hover */
+    width: 100%; /* Full width button */
+    font-size: 16px; /* Default font size */
+    transition: font-size 0.3s; /* Smooth transition for font size */
+    text-align: center; /* Center text in the button */
+    margin-left: auto;
+    
+}
+
+.toc-list {
+    list-style-type: none; /* Remove default list styling */
+    padding: 0; /* Remove default padding */
+    display: none; /* Hide list by default */
+}
+
+.toc-list li {
+    margin-bottom: 8px; /* Space between list items */
+}
+
+.toc-list li a {
+    text-decoration: none; /* Remove underline from links */
+    color: #4b4497; /* Link color */
+    transition: color 0.3s; /* Smooth color transition */
+}
+
+.toc-list li a:hover {
+    color: #7b68b8; /* Change color on hover */
+}
+
+
+
+[id] {
+    scroll-margin-top: 100px; /* Adjust this value as needed */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .toc {
+        width: 75px; /* 50% of the original width */
+        padding: 7.5px; /* Reduce padding by 50% */
+        background-color: rgba(255, 255, 255, 0.676);
+        right: 0;
+        top: 70px; /* Adjust top position on smaller screens */
+       
+        
+    }
+
+    
+    .toc-toggle{
+        font-size: 14px; /* Smaller font size for the button */
+        padding: 4px; /* Reduced padding for smaller button */
+        width: 45px;
+        
+        
+
+    }
+}
+
+@media (max-width: 1120px) {
+    .toc {
+        width: 125px; /* Adjust width on smaller screens */
+        right: 10px; /* Adjust right position on smaller screens */
+        top: 60px; /* Adjust top position on smaller screens */
+    }
+}
+
+
+
+
+
+
+        </style>
+
+        
+    </head>
+    <body style="overflow-x: hidden;" >
+        <!--=============== HEADER ===============-->
+        <header class="header">
+            <nav class="nav container">
+                <div class="nav__data">
+                    <a href="index.html" class="nav__logo fs-5">
+                        <i class="bi bi-circle-fill"></i> FARKINDAYIZ
+                        
+                    </a>
+    
+                    <div class="nav__toggle" id="nav-toggle">
+                        <i class="ri-menu-line nav__toggle-menu"></i>
+                        <i class="ri-close-line nav__toggle-close"></i>
+                    </div>
+                </div>
+
+                <!--=============== NAV MENU ===============-->
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li>
+                            <a href="index.html" class="nav__link">Anasayfa</a>
+                        </li>
+
+                        <!--=============== DROPDOWN 1 ===============-->
+                        <li class="dropdown__item">                      
+                            <div class="nav__link dropdown__button">
+                                Keşfet <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                            </div>
+
+                            <div class="dropdown__container">
+                                <div class="dropdown__content">
+                                    <div class="dropdown__group">
+                                        <div class="dropdown__icon">
+                                            <i class="ri-flashlight-line"></i>
+                                        </div>
+    
+                                        <span class="dropdown__title">Dijital Şiddet</span>
+    
+                                        <ul class="dropdown__list">
+                                            <li>
+                                                <a href="siber-zorbalik.html" class="dropdown__link">Siber Zorbalık</a>
+                                            </li>
+                                            <li>
+                                                <a href="siber-taciz.html" class="dropdown__link">Siber Taciz</a>
+                                            </li>
+                                            <li>
+                                                <a href="siber-takip.html" class="dropdown__link">Siber Takip (Cyberstalking)</a>
+                                            </li>
+                                            <li>
+                                                <a href="kimlik-hirsizligi.html" class="dropdown__link">Kimlik Hırsızlığı ve Dolandırıcılık</a>
+                                            </li>
+                                            <li>
+                                                <a href="dijital-mahremiyet.html" class="dropdown__link">Dijital Mahremiyet İhlalleri</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+    
+                                    <div class="dropdown__group">
+                                        <div class="dropdown__icon">
+                                            <i class="ri-heart-3-line"></i>
+                                        </div>
+    
+                                        <span class="dropdown__title">Dijital Güvenlik</span>
+    
+                                        <ul class="dropdown__list">
+                                            <li>
+                                                <a href="phishing-dolandiricilik.html" class="dropdown__link">Phishing ve Dolandırıcılık</a>
+                                            </li>
+                                            <li>
+                                                <a href="dijital-manipulasyon.html" class="dropdown__link">Dijital Manipülasyon</a>
+                                            </li>
+                                            
+                                        </ul>
+                                    </div>
+    
+                                    <div class="dropdown__group">
+                                        <div class="dropdown__icon">
+                                            <i class="ri-book-mark-line"></i>
+                                        </div>
+    
+                                        <span class="dropdown__title">Çevrimiçi Davranış Kuralları</span>
+    
+                                        <ul class="dropdown__list">
+                                            <li>
+                                                <a href="dijital-ayak-izi.html" class="dropdown__link">Dijital Ayak İzi</a>
+                                            </li>
+                                            <li>
+                                                <a href="cocuklar-icin.html" class="dropdown__link">Çocuklar için Dijital Davranış</a>
+                                            </li>
+                                            
+                                            <li>
+                                                <a href="siber-sorumluluk.html" class="dropdown__link">Siber Sorumluluk</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+    
+                                    <div class="dropdown__group">
+                                        <div class="dropdown__icon">
+                                            <i class="ri-file-paper-2-line"></i>
+                                        </div>
+    
+                                        <span class="dropdown__title">Dijital Şiddetle Mücadele</span>
+    
+                                        <ul class="dropdown__list">
+                                            <li>
+                                                <a href="hukuk.html" class="dropdown__link">Yasal Destek</a>
+                                            </li>
+                                            <li>
+                                                <a href="hukuk.html" class="dropdown__link">Hukuki Haklar</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <!--=============== DROPDOWN 2 ===============-->
+                        <!-- <li class="dropdown__item">
+                            <div class="nav__link dropdown__button">
+                                Resources <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                            </div>
+
+                            <div class="dropdown__container">
+                                <div class="dropdown__content">
+                                    <div class="dropdown__group">
+                                        <div class="dropdown__icon">
+                                            <i class="ri-code-line"></i>
+                                        </div>
+    
+                                        <span class="dropdown__title">Web templates</span>
+    
+                                        <ul class="dropdown__list">
+                                            <li>
+                                                <a href="#" class="dropdown__link">Free templates</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="dropdown__link">Premium templates</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+    
+                                    <div class="dropdown__group">
+                                        <div class="dropdown__icon">
+                                            <i class="ri-pen-nib-line"></i>
+                                        </div>
+    
+                                        <span class="dropdown__title">Designs</span>
+    
+                                        <ul class="dropdown__list">
+                                            <li>
+                                                <a href="#" class="dropdown__link">Web designs</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="dropdown__link">App designs</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="dropdown__link">Component design</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+    
+                                    <div class="dropdown__group">
+                                        <div class="dropdown__icon">
+                                            <i class="ri-apps-2-line"></i>
+                                        </div>
+    
+                                        <span class="dropdown__title">Others</span>
+    
+                                        <ul class="dropdown__list">
+                                            <li>
+                                                <a href="#" class="dropdown__link">Recent blogs</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="dropdown__link">Tutorial videos</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="dropdown__link">Webinar</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li> -->
+
+                        
+
+                        <!--=============== DROPDOWN 3 ===============-->
+                        <li class="dropdown__item">                        
+                            <div class="nav__link dropdown__button">
+                                Topluluk <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                            </div>
+
+                            <div class="dropdown__container">
+                                <div class="dropdown__content">
+                                    <div class="dropdown__group">
+                                        <div class="dropdown__icon">
+                                            <i class="ri-community-line"></i>
+                                        </div>
+    
+                                        <span class="dropdown__title">Hakkımızda</span>
+    
+                                        <ul class="dropdown__list">
+                                            <li>
+                                                <a href="about-us.html" class="dropdown__link">Hakkımızda</a>
+                                            </li>
+                                            <li>
+                                                <a href="support.html" class="dropdown__link">Destek</a>
+                                            </li>
+                                            <li>
+                                                <a href="contact.html" class="dropdown__link">İletişim</a>
+                                            </li>
+                                            <li>
+                                                <a href="join-us.html" class="dropdown__link">Bize Katıl</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+    
+                                    <div class="dropdown__group">
+                                        <div class="dropdown__icon">
+                                            <i class="ri-map-pin-2-line"></i>
+                                        </div>
+    
+                                        <span class="dropdown__title">Konumumuz</span>
+    
+                                        <ul class="dropdown__list">
+                                            <li>
+                                                <a href="location.html" class="dropdown__link">Haritalardaki Konum</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="dropdown__link">İletişim</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <a href="price.html" class="nav__link">Bağış</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <!--=============== HERO ===============-->
+    <section class="hero">
+        <div class="image-container">
+            <img src="https://nazanmoroglu.com/wp-content/uploads/2018/11/kad%C4%B1n%C4%B1n-insan-haklar%C4%B1.jpg" alt="Hero Image" class="full-width-image">
+            <div class="image-title">DİJİTAL ŞİDDET EYLEMLERİ ve <div class="text-danger">HUKUKİ
+                DÜZENLEMELER</div></div>
+        </div>
+    </section>
+
+        
+        
+        
+        <!--=============== NESTED NAV ===============-->
+
+
+        <div class="container text-dark mt-4 shadow p-5">
+            
+            <div class="toc mb-4">
+                <button class="toc-toggle" onclick="toggleTOC()">İçindekiler</button>
+                <ul class="toc-list">
+                    <li><a href="#siber-zorbalik">Israrlı Takip</a></li>
+                    <li><a href="#siber-zorbalik-yontemleri">Özel Yazışmalar ve Görüntüler</a></li>
+                    <li><a href="#rahatsiz-olup-magdur-hissederseniz">Siber Sömürü /Cinsel İçerikli Şantaj</a></li>
+                    <li><a href="#siber-zorbaligi-nasil-durdurulur">Kaynaklar</a></li>
+                    
+                </ul>
+            </div>
+
+            
+
+            <h3 id="siber-zorbalik" style="color: #4b4497;"> Dijital Dünyada Şiddete Karşı Birlikte Dur, Hak ve Hukukla Güvende Kal!</h3>
+            <img class="mt-4"  style="width: 100%; border-radius: 50px;" src="https://karataytermal.com/Upload/kadin-haklari-ve-cinsiyet-esitligi-politikasi.jpg" alt="">
+            
+
+
+            
+
+
+
+
+
+
+            
+            <h3 class="text-margin">Dijital Şiddet Eylemleri</h3>
+
+            <h4 id="siber-zorbalik" class="text-margin mb-3">Israrlı Takip</h4>
+            
+
+            <div class="row g-4 justify-content-center">
+                <div class="col-md-4 col-sm-6 d-flex justify-content-center">
+                  <div class="card">
+                    <!-- <img src="assets/images/create-an-image-for-the-contact-page-of-my-website.png" class="card-img-top" alt="Kart Görseli"> -->
+                    <div class="card-body text-align">
+                      <h5 class="support_text card-title">Israrlı Takip</h5><br>
+                      <p class="card-text ">
+                          <p class=" fs-6"> Sürekli mesaj
+                            göndermek ya da aramak,
+                            konum bildirmeye, fotoğraf
+                            atmaya zorlamak. Kişi iletişim
+                            kurmak istemediğini belirttiği
+                            ya da yanıt vermediği halde
+                            iletişim kurmakta ısrar etmek. 
+                            </p>
+                          
+                            
+                      
+                    </div>
+                  </div>
+                </div>
+          
+                <div class="col-md-4 col-sm-6 d-flex justify-content-center">
+                  <div class="card">
+                    <!-- <img src="assets/images/join-team.png" class="card-img-top" alt="Kart Görseli"> -->
+                    <div class="card-body text-align">
+                      <h5 class="support_text card-title">Hangi suç/yasa kapsamında değerlendiriliyor?</h5><br>
+                      <p class="card-text">
+                          <p class="fs-6"><b>Kişilerin huzur ve sükununu bozma - TCK Madde 123</b> <br>
+                            Sırf huzur ve sükûnunu bozmak
+                            maksadıyla bir kimseye ısrarla;
+                            telefon edilmesi, gürültü
+                            yapılması ya da aynı maksatla
+                            hukuka aykırı başka bir
+                            davranışta bulunulması. </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6 d-flex justify-content-center">
+                    <div class="card">
+                      <!-- <img src="assets/images/join-team.png" class="card-img-top" alt="Kart Görseli"> -->
+                      <div class="card-body text-align">
+                        <h5 class="support_text card-title">Olası Yaptırımlar Nelerdir?</h5><br>
+                        <p class="card-text">
+                            <p class="fs-6"><b>Mağdurun şikayeti üzerine faile üç aydan bir yıla kadar hapis cezası verilir.</b></p>
+                      </div>
+                    </div>
+                  </div>
+
+
+            </div> <hr>
+
+            <h4 id="siber-zorbalik-yontemleri" class="text-margin mb-3">Özel Yazışmalar ve Görüntüler</h4>
+
+            <h5 class="text-margin mb-3">Haberleşmenin Gizliliğini İhlal - TCK Madde 132</h5>
+            
+
+            <div class="row g-4 justify-content-center">
+                
+          
+                <div class="col-md-4 col-sm-4 d-flex justify-content-center">
+                  <div class="card">
+                    <!-- <img src="assets/images/join-team.png" class="card-img-top" alt="Kart Görseli"> -->
+                    <div class="card-body text-align">
+                      <h5 class="support_text card-title">Hangi suç/yasa kapsamında değerlendiriliyor?</h5><br>
+                      <p class="card-text">
+                          <p class="fs-6">
+                            Kişiler arasındaki haberleşmenin
+                            gizliliğini ihlal etmek.  </p>
+
+                        <h5 class="support_text card-title">Olası Yaptırımlar Nelerdir?</h5>
+
+                        <p class="fs-6">
+                            <b>Bir yıldan üç yıla kadar hapis
+                                cezası</b>
+                        </p>
+                    </div>
+                    
+                  </div>
+                </div>
+
+                <div class="col-md-4 col-sm-4 d-flex justify-content-center">
+                    <div class="card">
+                      <!-- <img src="assets/images/join-team.png" class="card-img-top" alt="Kart Görseli"> -->
+                      <div class="card-body text-align">
+                        <h5 class="support_text card-title">Hangi suç/yasa kapsamında değerlendiriliyor?</h5><br>
+                        <p class="card-text">
+                            <p class="fs-6">
+                                Bu gizlilik ihlalinin haberleşme
+                                içeriklerinin kaydı suretiyle
+                                gerçekleşmesi.   </p>
+  
+                          <h5 class="support_text card-title">Olası Yaptırımlar Nelerdir?</h5>
+  
+                          <p class="fs-6">
+                              <b>Verilecek ceza bir kat artırılır</b>
+                          </p>
+                      </div>
+                      
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-4 d-flex justify-content-center">
+                    <div class="card">
+                      <!-- <img src="assets/images/join-team.png" class="card-img-top" alt="Kart Görseli"> -->
+                      <div class="card-body text-align">
+                        <h5 class="support_text card-title">Hangi suç/yasa kapsamında değerlendiriliyor?</h5><br>
+                        <p class="card-text">
+                            <p class="fs-6">
+                                Kişiler arasındaki haberleşme
+                                içeriklerini hukuka aykırı olarak
+                                ifşa etmek.  </p>
+  
+                          <h5 class="support_text card-title">Olası Yaptırımlar Nelerdir?</h5>
+  
+                          <p class="fs-6">
+                              <b> İki yıldan beş yıla kadar
+                                hapis cezası</b>
+                          </p>
+                      </div>
+                      
+                    </div>
+                </div>
+
+                <div class="col-md-5 col-sm-4 d-flex justify-content-center">
+                    <div class="card">
+                      <!-- <img src="assets/images/join-team.png" class="card-img-top" alt="Kart Görseli"> -->
+                      <div class="card-body text-align">
+                        <h5 class="support_text card-title">Hangi suç/yasa kapsamında değerlendiriliyor?</h5><br>
+                        <p class="card-text">
+                            <p class="fs-6">
+                                Kendisiyle yapılan
+                                haberleşmelerin içeriğini diğer
+                                tarafın rızası olmaksızın hukuka
+                                aykırı olarak alenen ifşa etmek.  </p>
+  
+                          <h5 class="support_text card-title">Olası Yaptırımlar Nelerdir?</h5>
+  
+                          <p class="fs-6">
+                              <b> Bir yıldan üç yıla kadar hapis
+                                cezası</b>
+                          </p>
+                      </div>
+                      
+                    </div>
+                </div>
+
+                <div class="col-md-5 col-sm-4 d-flex justify-content-center">
+                    <div class="card">
+                      <!-- <img src="assets/images/join-team.png" class="card-img-top" alt="Kart Görseli"> -->
+                      <div class="card-body text-align">
+                        <h5 class="support_text card-title">Hangi suç/yasa kapsamında değerlendiriliyor?</h5><br>
+                        <p class="card-text">
+                            <p class="fs-6">
+                                İfşa edilen bu verilerin basın ve
+                                yayın yoluyla yayımlanması  </p>
+  
+                          <h5 class="support_text card-title">Olası Yaptırımlar Nelerdir?</h5>
+  
+                          <p class="fs-6">
+                              <b> Bir yıldan üç yıla kadar hapis
+                                cezası</b>
+                          </p>
+                      </div>
+                      
+                    </div>
+                </div>
+
+                
+
+            </div> 
+
+            <h5 class="text-margin mb-3">Kişiler arasındaki konuşmaların dinlenmesi ve kayda alınması - TCK Madde 133</h5>
+            
+
+            <div class="row g-4 justify-content-center">
+                
+          
+                <div class="col-md-4 col-sm-4 d-flex justify-content-center">
+                  <div class="card">
+                    <!-- <img src="assets/images/join-team.png" class="card-img-top" alt="Kart Görseli"> -->
+                    <div class="card-body text-align">
+                      <h5 class="support_text card-title">Hangi suç/yasa kapsamında değerlendiriliyor?</h5><br>
+                      <p class="card-text">
+                          <p class="fs-6">
+                            Kişiler arasındaki aleni olmayan
+                            konuşmaları, taraflardan
+                            herhangi birinin rızası
+                            olmaksızın bir aletle dinlemek
+                            veya bunları bir ses alma cihazı
+                            ile kaydetmek  </p>
+
+                        <h5 class="support_text card-title">Olası Yaptırımlar Nelerdir?</h5>
+
+                        <p class="fs-6">
+                            <b>Altı aydan iki yıla kadar hapis
+                                veya adlî para cezası</b>
+                        </p>
+                    </div>
+                    
+                  </div>
+                </div>
+
+                <div class="col-md-4 col-sm-4 d-flex justify-content-center">
+                    <div class="card">
+                      <!-- <img src="assets/images/join-team.png" class="card-img-top" alt="Kart Görseli"> -->
+                      <div class="card-body text-align">
+                        <h5 class="support_text card-title">Hangi suç/yasa kapsamında değerlendiriliyor?</h5><br>
+                        <p class="card-text">
+                            <p class="fs-6">
+                                Katıldığı aleni olmayan bir
+                                söyleşiyi, diğer konuşanların
+                                rızası olmadan ses alma cihazı
+                                ile kaydetmek   </p>
+  
+                          <h5 class="support_text card-title">Olası Yaptırımlar Nelerdir?</h5>
+  
+                          <p class="fs-6">
+                              <b>İki yıldan beş yıla kadar
+                                hapis ve dörtbin güne kadar
+                                adlî para cezası
+                                </b>
+                          </p>
+                      </div>
+                      
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-4 d-flex justify-content-center">
+                    <div class="card">
+                      <!-- <img src="assets/images/join-team.png" class="card-img-top" alt="Kart Görseli"> -->
+                      <div class="card-body text-align">
+                        <h5 class="support_text card-title">Hangi suç/yasa kapsamında değerlendiriliyor?</h5><br>
+                        <p class="card-text">
+                            <p class="fs-6">
+                                Kişiler arasındaki aleni olmayan
+                                konuşmaların kaydedilmesi
+                                suretiyle elde edilen verileri
+                                hukuka aykırı olarak ifşa etmek  </p>
+  
+                          <h5 class="support_text card-title">Olası Yaptırımlar Nelerdir?</h5>
+  
+                          <p class="fs-6">
+                              <b> İki yıldan beş yıla kadar
+                                hapis ve dörtbin güne kadar
+                                adlî para cezası</b>
+                          </p>
+                      </div>
+                      
+                    </div>
+                </div>
+
+                
+
+                
+
+            </div> <hr>
+
+            <h4 id="rahatsiz-olup-magdur-hissederseniz" class="text-margin mb-3">Siber Sömürü /Cinsel İçerikli Şantaj </h4>
+
+            <h5 class="text-margin mb-3">Özel hayatın gizliliğini ihlal - TCK Madde 134</h5>
+            
+
+            <div class="row g-4 justify-content-center">
+                
+          
+                <div class="col-md-4 col-sm-4 d-flex justify-content-center">
+                  <div class="card">
+                    <!-- <img src="assets/images/join-team.png" class="card-img-top" alt="Kart Görseli"> -->
+                    <div class="card-body text-align">
+                      <h5 class="support_text card-title">Hangi suç/yasa kapsamında değerlendiriliyor?</h5><br>
+                      <p class="card-text">
+                          <p class="fs-6">
+                            Kişilerin özel hayatının gizliliğini
+                            ihlal etmek  </p>
+
+                        <h5 class="support_text card-title">Olası Yaptırımlar Nelerdir?</h5>
+
+                        <p class="fs-6">
+                            <b>Bir yıldan üç yıla kadar hapis
+                                cezası</b>
+                        </p>
+                    </div>
+                    
+                  </div>
+                </div>
+
+                <div class="col-md-4 col-sm-4 d-flex justify-content-center">
+                    <div class="card">
+                      <!-- <img src="assets/images/join-team.png" class="card-img-top" alt="Kart Görseli"> -->
+                      <div class="card-body text-align">
+                        <h5 class="support_text card-title">Hangi suç/yasa kapsamında değerlendiriliyor?</h5><br>
+                        <p class="card-text">
+                            <p class="fs-6">
+                                Görüntü veya ses kaydı alarak
+                                gizlilik ihlali   </p>
+  
+                          <h5 class="support_text card-title">Olası Yaptırımlar Nelerdir?</h5>
+  
+                          <p class="fs-6">
+                              <b>Verilecek ceza bir kat artırılır</b>
+                          </p>
+                      </div>
+                      
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-4 d-flex justify-content-center">
+                    <div class="card">
+                      <!-- <img src="assets/images/join-team.png" class="card-img-top" alt="Kart Görseli"> -->
+                      <div class="card-body text-align">
+                        <h5 class="support_text card-title">Hangi suç/yasa kapsamında değerlendiriliyor?</h5><br>
+                        <p class="card-text">
+                            <p class="fs-6">
+                                Kişilerin özel hayatına ilişkin
+                                görüntü veya sesleri hukuka
+                                aykırı olarak ifşa etmek 
+                                </p>
+  
+                          <h5 class="support_text card-title">Olası Yaptırımlar Nelerdir?</h5>
+  
+                          <p class="fs-6">
+                              <b> İki yıldan beş yıla kadar
+                                hapis cezası</b>
+                          </p>
+                      </div>
+                      
+                    </div>
+                </div>
+
+                
+
+                <div class="col-md-7 col-sm-4 d-flex justify-content-center">
+                    <div class="card">
+                      <!-- <img src="assets/images/join-team.png" class="card-img-top" alt="Kart Görseli"> -->
+                      <div class="card-body text-align">
+                        <h5 class="support_text card-title">Hangi suç/yasa kapsamında değerlendiriliyor?</h5><br>
+                        <p class="card-text">
+                            <p class="fs-6">
+                                İfşa edilen bu verilerin basın ve
+                                yayın yoluyla yayımlanması  </p>
+  
+                          <h5 class="support_text card-title">Olası Yaptırımlar Nelerdir?</h5>
+  
+                          <p class="fs-6">
+                              <b> İki yıldan beş yıla kadar
+                                hapis cezası</b>
+                          </p>
+                      </div>
+                      
+                    </div>
+                </div>
+
+                
+
+            </div> 
+
+            <h5 class="text-margin mb-3">Tehdit – TCK Madde 106</h5>
+            
+
+            <div class="row g-4 justify-content-center">
+                
+          
+                <div class="col-md-4 col-sm-4 d-flex justify-content-center">
+                  <div class="card">
+                    <!-- <img src="assets/images/join-team.png" class="card-img-top" alt="Kart Görseli"> -->
+                    <div class="card-body text-align">
+                      <h5 class="support_text card-title">Hangi suç/yasa kapsamında değerlendiriliyor?</h5><br>
+                      <p class="card-text">
+                          <p class="fs-6">
+                            Bir başkasını, kendisinin veya
+                            yakınının hayatına, vücut veya
+                            cinsel dokunulmazlığına yönelik
+                            bir saldırı gerçekleştireceğinden
+                            bahisle tehdit etmek  </p>
+
+                        <h5 class="support_text card-title">Olası Yaptırımlar Nelerdir?</h5>
+
+                        <p class="fs-6">
+                            <b>Altı aydan iki yıla kadar hapis
+                                cezası</b>
+                        </p>
+                    </div>
+                    
+                  </div>
+                </div>
+
+                <div class="col-md-4 col-sm-4 d-flex justify-content-center">
+                    <div class="card">
+                      <!-- <img src="assets/images/join-team.png" class="card-img-top" alt="Kart Görseli"> -->
+                      <div class="card-body text-align">
+                        <h5 class="support_text card-title">Hangi suç/yasa kapsamında değerlendiriliyor?</h5><br>
+                        <p class="card-text">
+                            <p class="fs-6">
+                                Tehdit içeren ifadelerin
+                                Sosyal medya üzerinden bir
+                                kişiye yönelmesi durumunda
+                                da aynı suç işlenmiş Kabul
+                                edilecektir. Genellikle hakaret
+                                suçu ile birlikte aynı eyleme
+                                bağlı olarak neticede bu suçun
+                                da oluştuğu görülmektedir.   </p>
+  
+                          <h5 class="support_text card-title">Olası Yaptırımlar Nelerdir?</h5>
+  
+                          <p class="fs-6">
+                              <b>Ceza verilir.</b>
+                          </p>
+                      </div>
+                      
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-4 d-flex justify-content-center">
+                    <div class="card">
+                      <!-- <img src="assets/images/join-team.png" class="card-img-top" alt="Kart Görseli"> -->
+                      <div class="card-body text-align">
+                        <h5 class="support_text card-title">Hangi suç/yasa kapsamında değerlendiriliyor?</h5><br>
+                        <p class="card-text">
+                            <p class="fs-6">
+                                Tehdidin; a) Silahla, b) Kişinin
+                                kendisini tanınmayacak bir
+                                hale koyması suretiyle, imzasız
+                                mektupla veya özel işaretlerle,
+                                c) Birden fazla kişi tarafından
+                                birlikte, d) Var olan veya
+                                var sayılan suç örgütlerinin
+                                oluşturdukları korkutucu güçten
+                                yararlanılarak, İşlenmesi 
+                                </p>
+  
+                          <h5 class="support_text card-title">Olası Yaptırımlar Nelerdir?</h5>
+  
+                          <p class="fs-6">
+                              <b> İki yıldan beş yıla kadar
+                                hapis cezası</b>
+                          </p>
+                      </div>
+                      
+                    </div>
+                </div>
+
+                
+
+                <div class="col-md-5 col-sm-4 d-flex justify-content-center">
+                    <div class="card">
+                      <!-- <img src="assets/images/join-team.png" class="card-img-top" alt="Kart Görseli"> -->
+                      <div class="card-body text-align">
+                        <h5 class="support_text card-title">Hangi suç/yasa kapsamında değerlendiriliyor?</h5><br>
+                        <p class="card-text">
+                            <p class="fs-6">
+                                Malvarlığı itibarıyla büyük bir
+                                zarara uğratacağından veya sair
+                                bir kötülük edeceğinden bahisle
+                                tehdit  </p>
+  
+                          <h5 class="support_text card-title">Olası Yaptırımlar Nelerdir?</h5>
+  
+                          <p class="fs-6">
+                              <b> Altı aya kadar hapis veya adlî
+                                para cezası</b>
+                          </p>
+                      </div>
+                      
+                    </div>
+                </div>
+
+                <div class="col-md-5 col-sm-4 d-flex justify-content-center">
+                    <div class="card">
+                      <!-- <img src="assets/images/join-team.png" class="card-img-top" alt="Kart Görseli"> -->
+                      <div class="card-body text-align">
+                        <h5 class="support_text card-title">Hangi suç/yasa kapsamında değerlendiriliyor?</h5><br>
+                        <p class="card-text">
+                            <p class="fs-6">
+                                Tehdit amacıyla kasten
+                                öldürme, kasten yaralama
+                                veya malvarlığına zarar verme
+                                suçunun işlenmesi   </p>
+  
+                          <h5 class="support_text card-title">Olası Yaptırımlar Nelerdir?</h5>
+  
+                          <p class="fs-6">
+                              <b> Ceza verilir.</b>
+                          </p>
+                      </div>
+                      
+                    </div>
+                </div>
+
+                
+
+            </div>
+
+            <h5 class="text-margin mb-3">Hakaret  -
+                TCK Madde 125</h5>
+            
+
+            <div class="row g-4 justify-content-center ">
+                
+          
+                <div class="col-md-4 col-sm-4 d-flex justify-content-center">
+                  <div class="card">
+                    <!-- <img src="assets/images/join-team.png" class="card-img-top" alt="Kart Görseli"> -->
+                    <div class="card-body text-align">
+                      <h5 class="support_text card-title">Hangi suç/yasa kapsamında değerlendiriliyor?</h5><br>
+                      <p class="card-text">
+                          <p class="fs-6">
+                            Bir kimseye onur, şeref ve
+                            saygınlığını rencide edebilecek
+                            nitelikte somut bir fiil veya
+                            olgu isnat etmek veya sövmek
+                            suretiyle bir kimsenin onur,
+                            şeref ve saygınlığına saldırmak  </p>
+
+                        <h5 class="support_text card-title">Olası Yaptırımlar Nelerdir?</h5>
+
+                        <p class="fs-6">
+                            <b>Üç aydan iki yıla kadar hapis
+                                veya adlî para cezası</b>
+                        </p>
+                    </div>
+                    
+                  </div>
+                </div>
+
+                <div class="col-md-4 col-sm-4 d-flex justify-content-center">
+                    <div class="card">
+                      <!-- <img src="assets/images/join-team.png" class="card-img-top" alt="Kart Görseli"> -->
+                      <div class="card-body text-align">
+                        <h5 class="support_text card-title">Hangi suç/yasa kapsamında değerlendiriliyor?</h5><br>
+                        <p class="card-text">
+                            <p class="fs-6">
+                                Hakaret suçunun; a) Kamu
+                                görevlisine karşı görevinden
+                                dolayı, b) Dini, siyasi, sosyal,
+                                felsefi inanç, düşünce ve
+                                kanaatlerini açıklamasından,
+                                değiştirmesinden, yaymaya
+                                çalışmasından, mensup olduğu
+                                dinin emir ve yasaklarına uygun
+                                davranmasından dolayı, c)
+                                Kişinin mensup bulunduğu dine
+                                göre kutsal sayılan değerlerden
+                                bahisle, İşlenmesi   </p>
+  
+                          <h5 class="support_text card-title">Olası Yaptırımlar Nelerdir?</h5>
+  
+                          <p class="fs-6">
+                              <b>Cezanın alt sınırı bir yıldan
+                                az olamaz.</b>
+                          </p>
+                      </div>
+                      
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-4 d-flex justify-content-center">
+                    <div class="card">
+                      <!-- <img src="assets/images/join-team.png" class="card-img-top" alt="Kart Görseli"> -->
+                      <div class="card-body text-align">
+                        <h5 class="support_text card-title">Hangi suç/yasa kapsamında değerlendiriliyor?</h5><br>
+                        <p class="card-text">
+                            <p class="fs-6">
+                                Hakaretin alenen işlenmesi
+                                Kurul hâlinde çalışan kamu
+                                görevlilerine görevlerinden
+                                dolayı hakaret edilmesi hâlinde
+                                suç, kurulu oluşturan üyelere
+                                karşı işlenmiş sayılır. Ancak, bu
+                                durumda zincirleme suça ilişkin
+                                madde hükümleri uygulanır. 
+                                </p>
+  
+                          <h5 class="support_text card-title">Olası Yaptırımlar Nelerdir?</h5>
+  
+                          <p class="fs-6">
+                              <b> Ceza altıda biri oranında
+                                artırılır.</b>
+                          </p>
+                      </div>
+                      
+                    </div>
+                </div>
+
+                
+
+            </div>
+
+
+
+
+            <h3 id="siber-zorbaligi-nasil-durdurulur" class="text-margin mb-3 support_text">Kaynaklar</h3>
+
+            <div class="row g-4 justify-content-center">
+                
+          
+                <div class="col-md-4 col-sm-4 d-flex justify-content-center">
+                  <div class="card">
+                     <img height="160px" src="https://yt3.googleusercontent.com/ytc/AIdro_ldxyHRwlAHRCyr4_72pw0JRJwblmyACfVWoXB85PoXOHQ=s900-c-k-c0x00ffffff-no-rj" class="card-img-top" alt="Kart Görseli"> 
+                    <div class="card-body text-align">
+                      <h5 class="support_text card-title">Sivil Toplum Geliştirme Merkezi</h5><br>
+                      <p class="card-text">
+                        Sivil Toplum Geliştirme Merkezi (STGM), 2004 yılından beri sivil toplum için eğitim, hibe, uzmanlık ve mevzuat destekleri sağlamakta, ayrıca sivil toplum örgütlerinin görünürlüğünü artırmak amacıyla çalışmaktadır. Merkezi Ankara'dadır ve 20 yılı aşkın bir süredir sivil alan deneyimi ile STÖ'lerin kurumsal yapılarını güçlendirme hedefindedir.
+                      </p>
+                          
+
+                            <a href="https://www.stgm.org.tr/sites/default/files/2020-09/cinsiyetci-dijital-siddetle-mucadele-rehberi.pdf" class="btn btn-primary">Daha Fazla</a>
+
+                        
+                    </div>
+                    
+                  </div>
+                </div>
+
+                <div class="col-md-4 col-sm-4 d-flex justify-content-center">
+                    <div class="card">
+                       <img height="160px" src="https://kadem.org.tr/wp-content/uploads/2014/01/KADEM-projeler.jpg" class="card-img-top" alt="Kart Görseli"> 
+                      <div class="card-body text-align">
+                        <h5 class="support_text card-title">Kadın ve Demokrasi Derneği</h5><br>
+                        <p class="card-text">
+                            
+                            KADEM, yani Kadın ve Demokrasi Derneği, kadın haklarını savunan önemli bir sivil toplum kuruluşudur. KADEM, kadına yönelik şiddetle mücadele, kadınların toplumsal ve ekonomik hayatta güçlendirilmesi gibi alanlarda çalışmalar yapar. Eğitim, yasal destek ve farkındalık yaratma gibi konularda projeler geliştirirler. Bu dernek, kadın haklarıyla ilgili bilgi almak ve destek almak isteyenler için önemli bir kaynaktır.
+                        </p>
+                            
+  
+                              <a href="https://www.sivilsayfalar.org/stk/toplumsal-bilgi-ve-iletisim-dernegi/" class="btn btn-primary">Daha Fazla</a>
+  
+                          
+                      </div>
+                      
+                    </div>
+                  </div>
+
+                  <div class="col-md-4 col-sm-4 d-flex justify-content-center">
+                    <div class="card">
+                       <img height="160px" src="https://upload.wikimedia.org/wikipedia/commons/1/14/UNFPA_logo.svg" class="card-img-top" alt="Kart Görseli"> 
+                      <div class="card-body text-align">
+                        <h5 class="support_text card-title">UNFPA Türkiye</h5><br>
+                        <p class="card-text">
+                            UNFPA Türkiye, Birleşmiş Milletler Nüfus Fonu'nun Türkiye'deki temsilciliğidir. UNFPA, cinsel ve üreme sağlığı alanında çalışarak, her gebeliğin istenilen, her doğumun güvenli olmasını hedefler. Türkiye'deki faaliyetleri, sağlık hizmetlerini iyileştirmek ve toplumda cinsiyet eşitliğini teşvik etmek üzerine odaklanmaktadır.
+                        </p>
+                            
+  
+                              <a href="https://turkiye.unfpa.org/tr/home" class="btn btn-primary">Daha Fazla</a>
+  
+                          
+                      </div>
+                      
+                    </div>
+                  </div>
+
+                
+
+                
+
+            </div>
+
+            
+
+
+
+            
+
+            
+            
+
+            <div class="d-flex justify-content-center mt-5 mb-3">
+                <div class="btn-group dropend">
+                  <button type="button" class="btn btn-primary">
+                    Paylaş
+                  </button>
+                  <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                    <span class="visually-hidden">Toggle Dropend</span>
+                  </button>
+                  <ul class="dropdown-menu">
+                    <!-- Dropdown menu links -->
+                    <div class="menu-container">
+                      <a href="#"><i class="bi bi-twitter"></i>Twitter</a>
+                      <a href="#"><i class="bi bi-facebook"></i>Facebook</a>
+                      <a href="#"><i class="bi bi-linkedin"></i>LinkedIn</a>
+                      <div class="copy-link">
+                        <span>Veya bağlantı kopyala</span>
+                        <input type="text" value="https://www.example.com" readonly>
+                      </div>
+                    </div>
+                  </ul>
+                </div>
+              </div>
+              
+
+            
+
+            
+
+
+            
+
+
+        </div>
+        
+        
+        
+        
+        
+
+        
+          
+        
+        
+
+        
+            
+
+<br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br>
+
+        <!--=============== FOOTER ===============-->
+
+        <footer>
+            <div class="waves">
+                <div class="wave" id="wave1"></div>
+                <div class="wave" id="wave2"></div>
+                <div class="wave" id="wave3"></div>
+                <div class="wave" id="wave4"></div>
+            </div> 
+            <ul class="social_icon">
+                <li ><a class="bi bi-facebook" href="#"></a></li>
+                <li ><a class="bi bi-twitter" href="#"></a></li>
+                <li ><a class="bi bi-linkedin" href="#"></a></li>
+                <li ><a class="bi bi-instagram" href="#"></a></li>
+            </ul>
+            <ul class="menu">
+                <li><a href="index.html">Anasayfa</a></li>
+                <li><a href="about-us.html">Hakkında</a></li>
+                <li><a href="support.html">Destek</a></li>
+                <li><a href="#">Ekibimiz</a></li>
+                <li><a href="contact.html">İletişim</a></li>
+            </ul>
+            <p>&copy;2024 FARKINDAYIZ | Tüm Hakları Saklıdır</p>
+        </footer>
+        
+
+
+        
+        <!--=============== MAIN JS ===============-->
+        <script>
+            function toggleTOC() {
+    const tocList = document.querySelector('.toc-list');
+    const tocToggle = document.querySelector('.toc-toggle');
+
+    // Toggle the TOC display
+    tocList.style.display = tocList.style.display === 'none' || tocList.style.display === '' ? 'block' : 'none';
+
+    // Change the button text based on the current display state
+    tocToggle.textContent = tocList.style.display === 'block' ? '✖' : '☰'; // "✖" for close, "☰" for hamburger
+}
+
+// Initial setup: set the button text based on the initial screen size
+window.onload = function() {
+    const tocToggle = document.querySelector('.toc-toggle');
+    tocToggle.textContent = window.innerWidth <= 768 ? '☰' : 'İçindekiler';
+};
+
+// Update button text on window resize
+window.onresize = function() {
+    const tocToggle = document.querySelector('.toc-toggle');
+    tocToggle.textContent = window.innerWidth <= 768 ? '☰' : 'İçindekiler';
+};
+
+
+        </script>
+        <script src="assets/js/main.js"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    </body>
+</html>

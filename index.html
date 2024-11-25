@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--=============== REMIXICONS ===============-->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css">
+
+
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="assets/css/styles.css">
+        <link rel="stylesheet" href="assets/css/slider-style.css">
+        <link rel="stylesheet" href="assets/css/footer-style.css">
+
+        <title>FARKINDAYIZ | Anasayfa</title>
+
+        <style>
+            .card {
+      transition: transform 0.3s ease; /* Geçiş süresi */
+    }
+    
+    .card:hover {
+      transform: scale(1.05); /* Hover'da kartı %5 büyüt */
+    }
+
+    .card {
+        display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Kart içeriğini dikey olarak yayar */
+    max-width: 100%;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px; /* Kartın iç kısmına biraz boşluk ekler */
+}
+
+.card img {
+    object-fit: cover;
+    width: 100%;  
+    height: 400px;
+    border-radius: 5px 5px 0 0;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Yazıları ortalar */
+    text-align: center;
+}
+
+.support_text {
+    flex-grow: 1; /* Başlığın boşluğu doldurmasını sağlar */
+}
+
+.btn {
+    margin-top: 10px; 
+}
+
+@media (max-width: 768px) {
+    .card {
+        flex-direction: column; /* Küçük ekranlarda resmi üst tarafa taşı */
+        text-align: center;
+    }
+
+    .card img {
+        width: 100%; /* Küçük ekranlarda resmin genişliğini %100 yap */
+        border-radius: 5px 5px 0 0; /* Resim köşelerini yuvarlatır */
+    }
+}
+
+
+    .newsletter {
+        --body-color: hsl(220, 100%, 99%);
+  padding: 20px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.newsletter h2 {
+  font-size: 24px;
+  color: #333;
+}
+
+.newsletter p {
+  font-size: 16px;
+  color: #666;
+}
+
+.newsletter form {
+  margin-top: 15px;
+}
+
+.newsletter input[type="email"] {
+  padding: 10px;
+  font-size: 16px;
+  width: 60%;
+  max-width: 300px;
+  margin-right: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.newsletter button {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.newsletter button:hover {
+  background-color: #0056b3;
+}
+
+
+    @media (min-width: 768px) {
+      .card {
+        max-width: 350px; /* Kartların genişliğini sınırlıyoruz */
+      }
+    }
+
+    @media (max-width: 768px) {
+  .newsletter input[type="email"], .newsletter button {
+    width: 50%; /* Genişliği %100 yapar */
+    margin: 5px 0;
+  }
+}
+
+        </style>
+
+
+    </head>
+    <body style="overflow-x: hidden;" >
+        <!--=============== HEADER ===============-->
+        <header class="header">
+            <nav class="nav container">
+                <div class="nav__data">
+                    <a href="index.html" class="nav__logo fs-5">
+                        <i class="bi bi-circle-fill"></i> FARKINDAYIZ
+                        
+                    </a>
+    
+                    <div class="nav__toggle" id="nav-toggle">
+                        <i class="ri-menu-line nav__toggle-menu"></i>
+                        <i class="ri-close-line nav__toggle-close"></i>
+                    </div>
+                </div>
+
+                <!--=============== NAV MENU ===============-->
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li>
+                            <a href="index.html" class="nav__link">Anasayfa</a>
+                        </li>
+
+                        <!--=============== DROPDOWN 1 ===============-->
+                        <li class="dropdown__item">                      
+                            <div class="nav__link dropdown__button">
+                                Keşfet <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                            </div>
+
+                            <div class="dropdown__container">
+                                <div class="dropdown__content">
+                                    <div class="dropdown__group">
+                                        <div class="dropdown__icon">
+                                            <i class="ri-flashlight-line"></i>
+                                        </div>
+    
+                                        <span class="dropdown__title">Dijital Şiddet</span>
+    
+                                        <ul class="dropdown__list">
+                                            <li>
+                                                <a href="siber-zorbalik.html" class="dropdown__link">Siber Zorbalık</a>
+                                            </li>
+                                            <li>
+                                                <a href="siber-taciz.html" class="dropdown__link">Siber Taciz</a>
+                                            </li>
+                                            <li>
+                                                <a href="siber-takip.html" class="dropdown__link">Siber Takip (Cyberstalking)</a>
+                                            </li>
+                                            <li>
+                                                <a href="kimlik-hirsizligi.html" class="dropdown__link">Kimlik Hırsızlığı ve Dolandırıcılık</a>
+                                            </li>
+                                            <li>
+                                                <a href="dijital-mahremiyet.html" class="dropdown__link">Dijital Mahremiyet İhlalleri</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+    
+                                    <div class="dropdown__group">
+                                        <div class="dropdown__icon">
+                                            <i class="ri-heart-3-line"></i>
+                                        </div>
+    
+                                        <span class="dropdown__title">Dijital Güvenlik</span>
+    
+                                        <ul class="dropdown__list">
+                                            <li>
+                                                <a href="phishing-dolandiricilik.html" class="dropdown__link">Phishing ve Dolandırıcılık</a>
+                                            </li>
+                                            <li>
+                                                <a href="dijital-manipulasyon.html" class="dropdown__link">Dijital Manipülasyon</a>
+                                            </li>
+                                            
+                                        </ul>
+                                    </div>
+    
+                                    <div class="dropdown__group">
+                                        <div class="dropdown__icon">
+                                            <i class="ri-book-mark-line"></i>
+                                        </div>
+    
+                                        <span class="dropdown__title">Çevrimiçi Davranış Kuralları</span>
+    
+                                        <ul class="dropdown__list">
+                                            <li>
+                                                <a href="dijital-ayak-izi.html" class="dropdown__link">Dijital Ayak İzi</a>
+                                            </li>
+                                            <li>
+                                                <a href="cocuklar-icin.html" class="dropdown__link">Çocuklar için Dijital Davranış</a>
+                                            </li>
+                                            
+                                            <li>
+                                                <a href="siber-sorumluluk.html" class="dropdown__link">Siber Sorumluluk</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+    
+                                    <div class="dropdown__group">
+                                        <div class="dropdown__icon">
+                                            <i class="ri-file-paper-2-line"></i>
+                                        </div>
+    
+                                        <span class="dropdown__title">Dijital Şiddetle Mücadele</span>
+    
+                                        <ul class="dropdown__list">
+                                            <li>
+                                                <a href="hukuk.html" class="dropdown__link">Yasal Destek</a>
+                                            </li>
+                                            <li>
+                                                <a href="hukuk.html" class="dropdown__link">Hukuki Haklar</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <!--=============== DROPDOWN 2 ===============-->
+                        <!-- <li class="dropdown__item">
+                            <div class="nav__link dropdown__button">
+                                Resources <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                            </div>
+
+                            <div class="dropdown__container">
+                                <div class="dropdown__content">
+                                    <div class="dropdown__group">
+                                        <div class="dropdown__icon">
+                                            <i class="ri-code-line"></i>
+                                        </div>
+    
+                                        <span class="dropdown__title">Web templates</span>
+    
+                                        <ul class="dropdown__list">
+                                            <li>
+                                                <a href="#" class="dropdown__link">Free templates</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="dropdown__link">Premium templates</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+    
+                                    <div class="dropdown__group">
+                                        <div class="dropdown__icon">
+                                            <i class="ri-pen-nib-line"></i>
+                                        </div>
+    
+                                        <span class="dropdown__title">Designs</span>
+    
+                                        <ul class="dropdown__list">
+                                            <li>
+                                                <a href="#" class="dropdown__link">Web designs</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="dropdown__link">App designs</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="dropdown__link">Component design</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+    
+                                    <div class="dropdown__group">
+                                        <div class="dropdown__icon">
+                                            <i class="ri-apps-2-line"></i>
+                                        </div>
+    
+                                        <span class="dropdown__title">Others</span>
+    
+                                        <ul class="dropdown__list">
+                                            <li>
+                                                <a href="#" class="dropdown__link">Recent blogs</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="dropdown__link">Tutorial videos</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="dropdown__link">Webinar</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li> -->
+
+                        
+
+                        <!--=============== DROPDOWN 3 ===============-->
+                        <li class="dropdown__item">                        
+                            <div class="nav__link dropdown__button">
+                                Topluluk <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                            </div>
+
+                            <div class="dropdown__container">
+                                <div class="dropdown__content">
+                                    <div class="dropdown__group">
+                                        <div class="dropdown__icon">
+                                            <i class="ri-community-line"></i>
+                                        </div>
+    
+                                        <span class="dropdown__title">Hakkımızda</span>
+    
+                                        <ul class="dropdown__list">
+                                            <li>
+                                                <a href="about-us.html" class="dropdown__link">Hakkımızda</a>
+                                            </li>
+                                            <li>
+                                                <a href="support.html" class="dropdown__link">Destek</a>
+                                            </li>
+                                            <li>
+                                                <a href="contact.html" class="dropdown__link">İletişim</a>
+                                            </li>
+                                            <li>
+                                                <a href="join-us.html" class="dropdown__link">Bize Katıl</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+    
+                                    <div class="dropdown__group">
+                                        <div class="dropdown__icon">
+                                            <i class="ri-map-pin-2-line"></i>
+                                        </div>
+    
+                                        <span class="dropdown__title">Konumumuz</span>
+    
+                                        <ul class="dropdown__list">
+                                            <li>
+                                                <a href="location.html" class="dropdown__link">Haritalardaki Konum</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="dropdown__link">İletişim</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <a href="price.html" class="nav__link">Bağış</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <br><br>
+
+
+        
+            <div class="slider ">
+
+
+                <div class="list">
+        
+                    <div class="item">
+                        <img src="https://www.evimdekipsikolog.com/blog/wp-content/uploads/2021/12/siber_zorbalik_nedir_ne_degildir_evimdeki_psikolog_com_kapak.png" alt="">
+        
+                        <div class="content">
+                            <div class="title">SİBER ZORBALIK</div>
+                            <div class="type">NASILDIR?</div>
+                            
+                                
+                                    <div class="description" >
+                                        <p>Dijital zorbalık, internet ortamında bir kişiyi hedef alarak yapılan taciz, tehdit, aşağılayıcı yorumlar veya utandırıcı içerik paylaşımı gibi zararlı eylemleri ifade eder. </p>
+                                        
+                                    </div>
+                                
+                            
+                            
+                            <div class="button">
+                                <a href="siber-zorbalik.html" target="_blank" >İNCELE</a>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="item">
+                        <img src="https://www.evimdekipsikolog.com/blog/wp-content/uploads/2021/12/siber_zorbalik_nedir_ne_degildir_evimdeki_psikolog_com_3-1024x576.png" width="1500" height="841" alt="">
+        
+                        <div class="content">
+                            <div class="title">PHISING ve</div>
+                            <div class="type">DOLANDIRICILIK</div>
+                            <div class="row">
+                                <div class="col-md-10 col-sm-10 col-10">
+                                    <div class="description fs-6" >
+                                        <p>Phishing ve Dolandırıcılık, dijital ortamlarda kullanıcıların bilgilerini çalmak veya finansal kazanç elde etmek amacıyla gerçekleştirilen dolandırıcılık türleridir.</p>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="button">
+                                <a href="phishing-dolandiricilik.html" target="_blank">İNCELE</a>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="item">
+                        <img src="https://www.evimdekipsikolog.com/blog/wp-content/uploads/2021/12/siber_zorbalik_nedir_ne_degildir_evimdeki_psikolog_com_2-1024x576.png" width="1500" height="841" alt="">
+        
+                        <div class="content">
+                            <div class="title">ÇOCUKLAR İÇİN</div>
+                            <div class="type">DİJİTAL DAVRANIŞ</div>
+                            <div class="row">
+                                <div class="col-md-10 col-sm-10 col-10">
+                                    <div class="description" >
+                                        <p>Çocuklar için dijital davranış, çocukların internet, sosyal medya, oyunlar ve diğer dijital platformlarda sağlıklı, güvenli ve sorumlu bir şekilde etkileşimde bulunmalarını sağlayan temel kurallar ve alışkanlıklardan oluşur.</p>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="button">
+                                <a href="#" target="_blank">İNCELE</a>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="item">
+                        <img src="https://www.evimdekipsikolog.com/blog/wp-content/uploads/2021/12/siber_zorbalik_nedir_ne_degildir_evimdeki_psikolog_com_1-1024x576.png" alt="">
+        
+                        <div class="content">
+                            <div class="title">YASAL DESTEK ve</div>
+                            <div class="type">HUKUKİ HAKLAR</div>
+                            <div class="row">
+                                <div class="col-md-10 col-sm-10 col-10">
+                                    <div class="description" >
+                                        <p>Yasal Destek ve Hukuki Haklar, bireylerin hukuki haklarını bilmesi ve adalete erişim sağlaması için gerekli bilgi ve destekleri sunan bir platformdur.</p>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="button">
+                                <a href="hukuk.html" target="_blank">İNCELE</a>
+                            </div>
+                        </div>
+                    </div>
+        
+                </div>
+        
+        
+                <div class="thumbnail">
+                    
+                    <div class="item">
+                        <img src="https://www.evimdekipsikolog.com/blog/wp-content/uploads/2021/12/siber_zorbalik_nedir_ne_degildir_evimdeki_psikolog_com_kapak.png" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="https://www.evimdekipsikolog.com/blog/wp-content/uploads/2021/12/siber_zorbalik_nedir_ne_degildir_evimdeki_psikolog_com_3-1024x576.png" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="https://www.evimdekipsikolog.com/blog/wp-content/uploads/2021/12/siber_zorbalik_nedir_ne_degildir_evimdeki_psikolog_com_2-1024x576.png" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="https://www.evimdekipsikolog.com/blog/wp-content/uploads/2021/12/siber_zorbalik_nedir_ne_degildir_evimdeki_psikolog_com_1-1024x576.png" alt="">
+                    </div>
+        
+                </div>
+        
+        
+                <div class="nextPrevArrows col-md-10 col-sm-10 col-10">
+                    <button class="prev"> < </button>
+                    <button class="next"> > </button>
+                </div>
+        
+        
+            </div>
+
+
+
+
+
+            <div class="container">
+
+                <!-- Neler Yapıyoruz Bölümü -->
+<section class="projects-section py-5">
+    <div class="container">
+        <h2 class="text-center mb-5 text-dark">Neler Yapıyoruz?</h2>
+        <div class="row g-4">
+            
+            <!-- Siber Zorbalık Kartı -->
+            <div class="col-lg-4 col-md-6">
+                <div class="card h-100">
+                    <img src="https://cdn.pixabay.com/photo/2023/04/05/20/27/bullying-7902257_1280.png" class="card-img-top" alt="Siber Zorbalık">
+                    <div class="card-body">
+                        <h5 class="card-title">Siber Zorbalık ve Tacizle Mücadele</h5>
+                        <p class="card-text">Online platformlarda yaşanan zorbalık ve taciz vakalarını tanıtıyor, bu sorunlarla nasıl başa çıkılacağı konusunda kullanıcıları bilgilendiriyoruz.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Siber Takip Kartı -->
+            <div class="col-lg-4 col-md-6">
+                <div class="card h-100">
+                    <img src="https://cdn.pixabay.com/photo/2024/08/16/14/21/ai-generated-8973952_1280.png" class="card-img-top" alt="Siber Takip">
+                    <div class="card-body">
+                        <h5 class="card-title">Siber Takip (Cyberstalking) Farkındalığı</h5>
+                        <p class="card-text">Siber takip mağdurlarına yardım edecek kaynaklar sağlıyor ve dijital güvenliği nasıl artıracaklarına dair rehberlik ediyoruz.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Kimlik Hırsızlığı Kartı -->
+            <div class="col-lg-4 col-md-6">
+                <div class="card h-100">
+                    <img src="https://www.xitx.com/wp-content/uploads/2023/09/phishing.png" class="card-img-top" alt="Kimlik Hırsızlığı">
+                    <div class="card-body">
+                        <h5 class="card-title">Kimlik Hırsızlığı ve Dolandırıcılıkla Mücadele</h5>
+                        <p class="card-text">Dijital kimlik hırsızlığı ve dolandırıcılık konularında farkındalık oluşturuyor, korunma yöntemlerini paylaşıyoruz.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Dijital Mahremiyet Kartı -->
+            <div class="col-lg-4 col-md-6">
+                <div class="card h-100">
+                    <img src="https://media.istockphoto.com/id/1340428243/tr/vekt%C3%B6r/digital-information-safety-and-security-vector-people-talks-about-personal-data-protection.jpg?s=2048x2048&w=is&k=20&c=wV8k9Gmhw32HE3Fn_2N44IstbtH7_yQD7Btv8KvCogU=" class="card-img-top" alt="Dijital Mahremiyet">
+                    <div class="card-body">
+                        <h5 class="card-title">Dijital Mahremiyet ve Güvenlik</h5>
+                        <p class="card-text">Dijital platformlarda kişisel gizliliğin önemi üzerinde duruyor ve mahremiyet ihlallerine karşı alınabilecek önlemleri sunuyoruz.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Phishing ve Dolandırıcılık Kartı -->
+            <div class="col-lg-4 col-md-6">
+                <div class="card h-100">
+                    <img src="https://media.licdn.com/dms/image/v2/D4D12AQEuVMAc0ObcbQ/article-cover_image-shrink_600_2000/article-cover_image-shrink_600_2000/0/1722804742118?e=2147483647&v=beta&t=xfsRo3GJ_TzDT4TqYMUFtM431R27nRe2np56nLfMtm4" class="card-img-top" alt="Phishing ve Dolandırıcılık">
+                    <div class="card-body">
+                        <h5 class="card-title">Phishing ve Dolandırıcılığa Karşı Korunma</h5>
+                        <p class="card-text">Phishing saldırılarını tanımlıyor, bu tür tehditlerden korunmanın yollarını öğretiyoruz.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="card h-100">
+                    <img src="https://cdn.pixabay.com/photo/2021/03/03/19/11/cyberbullying-6066031_1280.jpg" class="card-img-top" alt="Phishing ve Dolandırıcılık">
+                    <div class="card-body">
+                        <h5 class="card-title">Çocuklar için Dijital Davranış Eğitimi</h5>
+                        <p class="card-text">Çocukların dijital dünyada güvenli bir şekilde var olmaları için gerekli olan temel kuralları ve güvenlik önlemlerini sağlıyoruz. Ailelere rehberlik ediyoruz.</p>
+                    </div>
+                </div>
+            </div>
+
+
+            
+
+        </div>
+    </div>
+</section>
+
+
+                
+
+
+
+
+                
+
+                <section class="newsletter mt-5">
+                    <h2>Bültenimize Abone Olun</h2>
+                    <p>En son güncellemeleri almak için abone olun.</p>
+                    <form action="/subscribe" method="post">
+                      <input type="email" name="email" placeholder="E-posta adresinizi girin" required>
+                      <button type="submit">Abone Ol</button>
+                    </form>
+                  </section>
+                
+            </div>
+
+
+
+
+
+
+
+            <br><br><br><br><br><br><br><br><br><br>
+
+
+
+
+
+
+
+
+
+
+        <!--=============== FOOTER ===============-->
+
+        <footer>
+            <div class="waves">
+                <div class="wave" id="wave1"></div>
+                <div class="wave" id="wave2"></div>
+                <div class="wave" id="wave3"></div>
+                <div class="wave" id="wave4"></div>
+            </div> 
+            <ul class="social_icon">
+                <li ><a class="bi bi-facebook" href="#"></a></li>
+                <li ><a class="bi bi-twitter" href="#"></a></li>
+                <li ><a class="bi bi-linkedin" href="#"></a></li>
+                <li ><a class="bi bi-instagram" href="#"></a></li>
+            </ul>
+            <ul class="menu">
+                <li><a href="index.html">Anasayfa</a></li>
+                <li><a href="about-us.html">Hakkında</a></li>
+                <li><a href="support.html">Destek</a></li>
+                <li><a href="#">Ekibimiz</a></li>
+                <li><a href="contact.html">İletişim</a></li>
+            </ul>
+            <p>&copy;2024 FARKINDAYIZ | Tüm Hakları Saklıdır</p>
+        </footer>
+        
+
+
+        
+        <!--=============== MAIN JS ===============-->
+        <script src="assets/js/main.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    </body>
+</html>

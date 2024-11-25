@@ -1,0 +1,78 @@
+
+        .image-container {
+            position: relative;
+            width: 100%;
+        }
+
+        .full-width-image {
+            height: 400px; /* Görsel yüksekliği */
+            width: 100%; /* Görsel genişliği */
+            object-fit: cover; /* Görüntüyü alanın içine sığacak şekilde kırpar */
+            margin-top: 50px;
+            border-radius: 0 0 10px 10px;
+            
+        }
+
+        .image-title {
+            position: absolute;
+            justify-content: center;
+            top: 60%; /* Görüntünün ortasına yerleştirir */
+            left: 50%; /*Yatay olarak ortalar */
+            transform: translate(-50%, -50%); /* Tam merkezlemek için */
+            color: white; /* Başlık metninin rengi */
+            font-size: 3.5rem; /* Başlık boyutu */
+            font-weight: bold; /* Kalın başlık */
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Metne gölge verir */
+        }
+
+        .custom-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto;
+      gap: 20px;
+    }
+
+    .custom-grid .card:nth-child(1) {
+      grid-column: 1;
+      grid-row: 1;
+    }
+
+    .custom-grid .card:nth-child(2) {
+      grid-column: 2;
+      grid-row: 2;
+    }
+
+    .custom-grid .card:nth-child(3) {
+      grid-column: 1;
+      grid-row: 3;
+    }
+
+    .custom-grid .card:nth-child(4) {
+      grid-column: 2;
+      grid-row: 4;
+    }
+
+    @media (max-width: 768px) {
+      .image-title {
+          font-size: 2.5rem; /* Yazı boyutunu küçültür */
+          top: 55%; /* Biraz daha yukarı çeker */
+      }
+
+      .full-width-image {
+        height: 300px; /* Görsel yüksekliği */
+    }
+  }
+  
+  /* Mobil cihazlar için */
+  @media (max-width: 480px) {
+      .image-title {
+          font-size: 2rem; /* Daha küçük yazı boyutu */
+          top: 50%; /* Daha yukarı çeker */
+      }
+
+      .full-width-image {
+        height: 200px; /* Görsel yüksekliği */
+    }
+  }
+        
+    

@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--=============== REMIXICONS ===============-->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css">
+
+
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="assets/css/styles.css">
+        <link rel="stylesheet" href="assets/css/slider-style.css">
+        <link rel="stylesheet" href="assets/css/contact-style.css">
+        <link rel="stylesheet" href="assets/css/footer-style.css">
+
+        <title>Destek | FARKINDAYIZ</title>
+
+        <style>
+        
+
+.support_text{
+  column-gap: 0.25rem;
+  color: #4b4497b2;
+  
+  transition: color 0.3s;
+  text-align: center;
+  
+}
+
+.support_text:hover {
+  color: #4b4497;
+}
+
+.card {
+      transition: transform 0.3s ease; /* Geçiş süresi */
+    }
+    
+    .card:hover {
+      transform: scale(1.05); /* Hover'da kartı %5 büyüt */
+    }
+    @media (min-width: 768px) {
+      .card {
+        max-width: 350px; /* Kartların genişliğini sınırlıyoruz */
+      }
+    }
+
+   
+
+
+
+        
+            
+        </style>
+    </head>
+    <body style="overflow-x: hidden;" >
+        <!--=============== HEADER ===============-->
+        <header class="header">
+          <nav class="nav container">
+              <div class="nav__data">
+                  <a href="index.html" class="nav__logo fs-5">
+                      <i class="bi bi-circle-fill"></i> FARKINDAYIZ
+                      
+                  </a>
+  
+                  <div class="nav__toggle" id="nav-toggle">
+                      <i class="ri-menu-line nav__toggle-menu"></i>
+                      <i class="ri-close-line nav__toggle-close"></i>
+                  </div>
+              </div>
+
+              <!--=============== NAV MENU ===============-->
+              <div class="nav__menu" id="nav-menu">
+                  <ul class="nav__list">
+                      <li>
+                          <a href="index.html" class="nav__link">Anasayfa</a>
+                      </li>
+
+                      <!--=============== DROPDOWN 1 ===============-->
+                      <li class="dropdown__item">                      
+                          <div class="nav__link dropdown__button">
+                              Keşfet <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                          </div>
+
+                          <div class="dropdown__container">
+                              <div class="dropdown__content">
+                                  <div class="dropdown__group">
+                                      <div class="dropdown__icon">
+                                          <i class="ri-flashlight-line"></i>
+                                      </div>
+  
+                                      <span class="dropdown__title">Dijital Şiddet</span>
+  
+                                      <ul class="dropdown__list">
+                                          <li>
+                                              <a href="siber-zorbalik.html" class="dropdown__link">Siber Zorbalık</a>
+                                          </li>
+                                          <li>
+                                              <a href="siber-taciz.html" class="dropdown__link">Siber Taciz</a>
+                                          </li>
+                                          <li>
+                                              <a href="siber-takip.html" class="dropdown__link">Siber Takip (Cyberstalking)</a>
+                                          </li>
+                                          <li>
+                                              <a href="kimlik-hirsizligi.html" class="dropdown__link">Kimlik Hırsızlığı ve Dolandırıcılık</a>
+                                          </li>
+                                          <li>
+                                              <a href="dijital-mahremiyet.html" class="dropdown__link">Dijital Mahremiyet İhlalleri</a>
+                                          </li>
+                                      </ul>
+                                  </div>
+  
+                                  <div class="dropdown__group">
+                                      <div class="dropdown__icon">
+                                          <i class="ri-heart-3-line"></i>
+                                      </div>
+  
+                                      <span class="dropdown__title">Dijital Güvenlik</span>
+  
+                                      <ul class="dropdown__list">
+                                          <li>
+                                              <a href="phishing-dolandiricilik.html" class="dropdown__link">Phishing ve Dolandırıcılık</a>
+                                          </li>
+                                          <li>
+                                              <a href="dijital-manipulasyon.html" class="dropdown__link">Dijital Manipülasyon</a>
+                                          </li>
+                                          
+                                      </ul>
+                                  </div>
+  
+                                  <div class="dropdown__group">
+                                      <div class="dropdown__icon">
+                                          <i class="ri-book-mark-line"></i>
+                                      </div>
+  
+                                      <span class="dropdown__title">Çevrimiçi Davranış Kuralları</span>
+  
+                                      <ul class="dropdown__list">
+                                          <li>
+                                              <a href="dijital-ayak-izi.html" class="dropdown__link">Dijital Ayak İzi</a>
+                                          </li>
+                                          <li>
+                                              <a href="cocuklar-icin.html" class="dropdown__link">Çocuklar için Dijital Davranış</a>
+                                          </li>
+                                          
+                                          <li>
+                                              <a href="siber-sorumluluk.html" class="dropdown__link">Siber Sorumluluk</a>
+                                          </li>
+                                      </ul>
+                                  </div>
+  
+                                  <div class="dropdown__group">
+                                      <div class="dropdown__icon">
+                                          <i class="ri-file-paper-2-line"></i>
+                                      </div>
+  
+                                      <span class="dropdown__title">Dijital Şiddetle Mücadele</span>
+  
+                                      <ul class="dropdown__list">
+                                          <li>
+                                              <a href="hukuk.html" class="dropdown__link">Yasal Destek</a>
+                                          </li>
+                                          <li>
+                                              <a href="hukuk.html" class="dropdown__link">Hukuki Haklar</a>
+                                          </li>
+                                      </ul>
+                                  </div>
+                              </div>
+                          </div>
+                      </li>
+
+                      <!--=============== DROPDOWN 2 ===============-->
+                      <!-- <li class="dropdown__item">
+                          <div class="nav__link dropdown__button">
+                              Resources <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                          </div>
+
+                          <div class="dropdown__container">
+                              <div class="dropdown__content">
+                                  <div class="dropdown__group">
+                                      <div class="dropdown__icon">
+                                          <i class="ri-code-line"></i>
+                                      </div>
+  
+                                      <span class="dropdown__title">Web templates</span>
+  
+                                      <ul class="dropdown__list">
+                                          <li>
+                                              <a href="#" class="dropdown__link">Free templates</a>
+                                          </li>
+                                          <li>
+                                              <a href="#" class="dropdown__link">Premium templates</a>
+                                          </li>
+                                      </ul>
+                                  </div>
+  
+                                  <div class="dropdown__group">
+                                      <div class="dropdown__icon">
+                                          <i class="ri-pen-nib-line"></i>
+                                      </div>
+  
+                                      <span class="dropdown__title">Designs</span>
+  
+                                      <ul class="dropdown__list">
+                                          <li>
+                                              <a href="#" class="dropdown__link">Web designs</a>
+                                          </li>
+                                          <li>
+                                              <a href="#" class="dropdown__link">App designs</a>
+                                          </li>
+                                          <li>
+                                              <a href="#" class="dropdown__link">Component design</a>
+                                          </li>
+                                      </ul>
+                                  </div>
+  
+                                  <div class="dropdown__group">
+                                      <div class="dropdown__icon">
+                                          <i class="ri-apps-2-line"></i>
+                                      </div>
+  
+                                      <span class="dropdown__title">Others</span>
+  
+                                      <ul class="dropdown__list">
+                                          <li>
+                                              <a href="#" class="dropdown__link">Recent blogs</a>
+                                          </li>
+                                          <li>
+                                              <a href="#" class="dropdown__link">Tutorial videos</a>
+                                          </li>
+                                          <li>
+                                              <a href="#" class="dropdown__link">Webinar</a>
+                                          </li>
+                                      </ul>
+                                  </div>
+                              </div>
+                          </div>
+                      </li> -->
+
+                      
+
+                      <!--=============== DROPDOWN 3 ===============-->
+                      <li class="dropdown__item">                        
+                          <div class="nav__link dropdown__button">
+                              Topluluk <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                          </div>
+
+                          <div class="dropdown__container">
+                              <div class="dropdown__content">
+                                  <div class="dropdown__group">
+                                      <div class="dropdown__icon">
+                                          <i class="ri-community-line"></i>
+                                      </div>
+  
+                                      <span class="dropdown__title">Hakkımızda</span>
+  
+                                      <ul class="dropdown__list">
+                                          <li>
+                                              <a href="about-us.html" class="dropdown__link">Hakkımızda</a>
+                                          </li>
+                                          <li>
+                                              <a href="support.html" class="dropdown__link">Destek</a>
+                                          </li>
+                                          <li>
+                                              <a href="contact.html" class="dropdown__link">İletişim</a>
+                                          </li>
+                                          <li>
+                                              <a href="join-us.html" class="dropdown__link">Bize Katıl</a>
+                                          </li>
+                                      </ul>
+                                  </div>
+  
+                                  <div class="dropdown__group">
+                                      <div class="dropdown__icon">
+                                          <i class="ri-map-pin-2-line"></i>
+                                      </div>
+  
+                                      <span class="dropdown__title">Konumumuz</span>
+  
+                                      <ul class="dropdown__list">
+                                          <li>
+                                              <a href="location.html" class="dropdown__link">Haritalardaki Konum</a>
+                                          </li>
+                                          <li>
+                                              <a href="#" class="dropdown__link">İletişim</a>
+                                          </li>
+                                      </ul>
+                                  </div>
+                              </div>
+                          </div>
+                      </li>
+
+                      <li>
+                          <a href="price.html" class="nav__link">Bağış</a>
+                      </li>
+
+                  </ul>
+              </div>
+          </nav>
+      </header>
+
+        <br><br><br>
+        
+        
+        <!--=============== ACCORDION ===============-->
+        <div class="container mt-5 pt-3 pb-3 shadow">
+            <h1 class="support_text text-center mb-4">Sıkça Sorulan Sorular</h1>
+            <div class="accordion" id="faqAccordion">
+              <!-- Soru 1 -->
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="faqHeading1">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse1" aria-expanded="true" aria-controls="faqCollapse1">
+                    Hesabımı nasıl oluşturabilirim?
+                  </button>
+                </h2>
+                <div id="faqCollapse1" class="accordion-collapse collapse show" aria-labelledby="faqHeading1" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">
+                    Hesap oluşturmak için ana sayfada "Kayıt Ol" butonuna tıklayın ve gerekli bilgileri doldurun.
+                  </div>
+                </div>
+              </div>
+        
+              <!-- Soru 2 -->
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="faqHeading2">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse2" aria-expanded="false" aria-controls="faqCollapse2">
+                    Şifremi unuttum, nasıl sıfırlayabilirim?
+                  </button>
+                </h2>
+                <div id="faqCollapse2" class="accordion-collapse collapse" aria-labelledby="faqHeading2" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">
+                    Şifrenizi sıfırlamak için giriş sayfasındaki "Şifremi Unuttum" bağlantısına tıklayın ve e-posta adresinizi girin.
+                  </div>
+                </div>
+              </div>
+        
+              <!-- Soru 3 -->
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="faqHeading3">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse3" aria-expanded="false" aria-controls="faqCollapse3">
+                    Siparişlerimi nasıl takip edebilirim?
+                  </button>
+                </h2>
+                <div id="faqCollapse3" class="accordion-collapse collapse" aria-labelledby="faqHeading3" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">
+                    Sipariş takibi yapmak için hesabınıza giriş yapın ve "Siparişlerim" bölümüne gidin.
+                  </div>
+                </div>
+              </div>
+        
+              <!-- Soru 4 -->
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="faqHeading4">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse4" aria-expanded="false" aria-controls="faqCollapse4">
+                    Ürün iadelerini nasıl yapabilirim?
+                  </button>
+                </h2>
+                <div id="faqCollapse4" class="accordion-collapse collapse" aria-labelledby="faqHeading4" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">
+                    İade süreci için "Hesabım" sayfasına gidin ve iade etmek istediğiniz ürünü seçerek "İade Talebi" oluşturun.
+                  </div>
+                </div>
+              </div>
+        
+              <!-- Soru 5 -->
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="faqHeading5">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse5" aria-expanded="false" aria-controls="faqCollapse5">
+                    Kargo ücretini kim ödüyor?
+                  </button>
+                </h2>
+                <div id="faqCollapse5" class="accordion-collapse collapse" aria-labelledby="faqHeading5" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">
+                    Kargo ücretleri, belirli sipariş tutarının üzerindeki alışverişlerde ücretsizdir. Aksi takdirde, standart kargo ücreti uygulanır.
+                  </div>
+                </div>
+              </div>
+        
+              <!-- Soru 6 -->
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="faqHeading6">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse6" aria-expanded="false" aria-controls="faqCollapse6">
+                    Siparişimi iptal edebilir miyim?
+                  </button>
+                </h2>
+                <div id="faqCollapse6" class="accordion-collapse collapse" aria-labelledby="faqHeading6" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">
+                    Siparişinizi iptal etmek için "Hesabım" sayfasındaki "Siparişlerim" bölümüne gidin ve iptal etmek istediğiniz siparişi seçin.
+                  </div>
+                </div>
+              </div>
+        
+              <!-- Soru 7 -->
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="faqHeading7">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse7" aria-expanded="false" aria-controls="faqCollapse7">
+                    Ürünler garantili mi?
+                  </button>
+                </h2>
+                <div id="faqCollapse7" class="accordion-collapse collapse" aria-labelledby="faqHeading7" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">
+                    Tüm ürünlerimiz, üretici firma tarafından belirlenen garanti süresi kapsamında satılmaktadır.
+                  </div>
+                </div>
+              </div>
+        
+              <!-- Soru 8 -->
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="faqHeading8">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse8" aria-expanded="false" aria-controls="faqCollapse8">
+                    Fatura bilgilerini nasıl güncelleyebilirim?
+                  </button>
+                </h2>
+                <div id="faqCollapse8" class="accordion-collapse collapse" aria-labelledby="faqHeading8" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">
+                    Fatura bilgilerinizi güncellemek için hesabınıza giriş yaparak "Fatura Bilgilerim" bölümünden düzenleme yapabilirsiniz.
+                  </div>
+                </div>
+              </div>
+        
+              <!-- Soru 9 -->
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="faqHeading9">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse9" aria-expanded="false" aria-controls="faqCollapse9">
+                    Ürünüm ne zaman kargoya verilir?
+                  </button>
+                </h2>
+                <div id="faqCollapse9" class="accordion-collapse collapse" aria-labelledby="faqHeading9" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">
+                    Sipariş verdiğiniz ürünler, genellikle 1-3 iş günü içinde kargoya teslim edilir. Ürün detay sayfasında belirtilen süreye dikkat edin.
+                  </div>
+                </div>
+              </div>
+        
+              <!-- Soru 10 -->
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="faqHeading10">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse10" aria-expanded="false" aria-controls="faqCollapse10">
+                    Kapıda ödeme yapabilir miyim?
+                  </button>
+                </h2>
+                <div id="faqCollapse10" class="accordion-collapse collapse" aria-labelledby="faqHeading10" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">
+                    Şu anda kapıda ödeme seçeneği sunmuyoruz. Ödemelerinizi kredi kartı veya banka kartı ile yapabilirsiniz.
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+              
+          </div>
+
+          <div class="container my-5 pb-3 pt-3 shadow">
+            <h1 class="support_text text-center mb-4">Dijital Destek Kanalları</h1>
+            <div class="row g-4 justify-content-center">
+              <div class="col-md-4 col-sm-6 d-flex justify-content-center">
+                <div class="card">
+                  <img src="assets/images/create-an-image-for-the-contact-page-of-my-website.png" class="card-img-top" alt="Kart Görseli">
+                  <div class="card-body">
+                    <h5 class="card-title">İletişim Formu</h5>
+                    <p class="card-text">İletişim formunu kullanarak bize yaşadığınız sorun hakkında daha fazla bilgi verebilirsin!</p>
+                    <a href="contact.html" class="btn btn-primary">Daha Fazla</a>
+                  </div>
+                </div>
+              </div>
+        
+              <div class="col-md-4 col-sm-6 d-flex justify-content-center">
+                <div class="card">
+                  <img src="assets/images/join-team.png" class="card-img-top" alt="Kart Görseli">
+                  <div class="card-body">
+                    <h5 class="card-title">Kart Başlığı 2</h5>
+                    <p class="card-text">İletişim formunu kullanarak bize yaşadığınız sorun hakkında daha fazla bilgi verebilirsin!</p>
+                    <a href="#" class="btn btn-primary">Daha Fazla</a>
+                  </div>
+                </div>
+              </div>
+        
+              <div class="col-md-4 col-sm-6 d-flex justify-content-center">
+                <div class="card">
+                  <img src="assets/images/create-an-image-for-the-contact-page-of-my-website.png" class="card-img-top" alt="Kart Görseli">
+                  <div class="card-body">
+                    <h5 class="card-title">Kart Başlığı 3</h5>
+                    <p class="card-text">İletişim formunu kullanarak bize yaşadığınız sorun hakkında daha fazla bilgi verebilirsin!</p>
+                    <a href="#" class="btn btn-primary">Daha Fazla</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        
+        
+
+        
+          
+        
+        
+
+        
+            
+
+<br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br>
+
+        <!--=============== FOOTER ===============-->
+
+        <footer>
+          <div class="waves">
+              <div class="wave" id="wave1"></div>
+              <div class="wave" id="wave2"></div>
+              <div class="wave" id="wave3"></div>
+              <div class="wave" id="wave4"></div>
+          </div> 
+          <ul class="social_icon">
+              <li ><a class="bi bi-facebook" href="#"></a></li>
+              <li ><a class="bi bi-twitter" href="#"></a></li>
+              <li ><a class="bi bi-linkedin" href="#"></a></li>
+              <li ><a class="bi bi-instagram" href="#"></a></li>
+          </ul>
+          <ul class="menu">
+              <li><a href="index.html">Anasayfa</a></li>
+              <li><a href="about-us.html">Hakkında</a></li>
+              <li><a href="support.html">Destek</a></li>
+              <li><a href="#">Ekibimiz</a></li>
+              <li><a href="contact.html">İletişim</a></li>
+          </ul>
+          <p>&copy;2024 FARKINDAYIZ | Tüm Hakları Saklıdır</p>
+      </footer>
+        
+
+
+        
+        <!--=============== MAIN JS ===============-->
+        <script src="assets/js/main.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    </body>
+</html>
